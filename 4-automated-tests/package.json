@@ -1,0 +1,28 @@
+{
+  "name": "qa-project",
+  "version": "1.0.0",
+  "description": "Testes automatizados bstackdemo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:run:chrome": "cypress run --browser chrome",
+    "cy:run:firefox": "cypress run --browser firefox"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FelipeLRoll/qa-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/FelipeLRoll/qa-project/issues"
+  },
+  "homepage": "https://github.com/FelipeLRoll/qa-project#readme",
+  "devDependencies": {
+    "cypress": "^15.7.0"
+  }
+}
