@@ -8,7 +8,7 @@
 // Módulo: Autenticação
 // ==================================================================== 
  
-describe ("Autenticação - Login e Logout", () => {
+describe ("Carrinho", () => {
   
   beforeEach(() => {
     // Visitar a página antes de cada teste
@@ -18,7 +18,7 @@ describe ("Autenticação - Login e Logout", () => {
  //TC-AUTO-005:  Adicionar Produto ao Carrinho
   it("TC-AUTO-005: Deve adicionar produto no carrinho", () => { 
 
-   cy.fazLogIn(); 
+   cy.fazLogIn()
 
    cy.get("#1").should("exist")
    cy.get("#1 .shelf-item__buy-btn").click()
@@ -41,7 +41,7 @@ describe ("Autenticação - Login e Logout", () => {
 
    cy.fazLogIn(); 
 
-   cy.adicionaProduto(1);
+   cy.adicionaProduto(1)
 
    cy.get(".shelf-item__del").click() // remove item do carrinho
    
@@ -54,7 +54,7 @@ describe ("Autenticação - Login e Logout", () => {
   //TC-AUTO-007:  Calcular o total do Carrinho
   it("TC-AUTO-007: Deve calcular o total do carrinho", () => { 
 
-   cy.fazLogIn(); 
+   cy.fazLogIn()
 
    cy.adicionaProduto(1)
    cy.adicionaProduto(2)
@@ -68,7 +68,7 @@ describe ("Autenticação - Login e Logout", () => {
     cy.get(".bag").click();
     cy.contains(".shelf-item", "iPhone 12")
       .find(".shelf-item__price")
-      .should("contain", price);
+      .should("contain", price)
 
     priceNumber1 = parseFloat(price.replace(/[^0-9.]/g, ""))
     priceNumber1 = Math.floor(priceNumber1 * 100) / 100
@@ -84,9 +84,9 @@ describe ("Autenticação - Login e Logout", () => {
     cy.get(".bag").click();
     cy.contains(".shelf-item", "iPhone 12 Mini")
       .find(".shelf-item__price")
-      .should("contain", price);
+      .should("contain", price)
 
-    priceNumber2 = parseFloat(price.replace(/[^0-9.]/g, ""));
+    priceNumber2 = parseFloat(price.replace(/[^0-9.]/g, ""))
     priceNumber2 = Math.floor(priceNumber2 * 100) / 100;
 
     cy.log("Preço item 2 (número): " + priceNumber2)
