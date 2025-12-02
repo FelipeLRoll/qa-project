@@ -1,0 +1,23 @@
+{
+  "name": "qa-project",
+  "version": "1.0.0",
+  "description": "EM CONSTRUÇÃO",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FelipeLRoll/qa-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/FelipeLRoll/qa-project/issues"
+  },
+  "homepage": "https://github.com/FelipeLRoll/qa-project#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^24.10.1"
+  }
+}
