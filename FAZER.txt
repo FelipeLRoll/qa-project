@@ -1,5 +1,5 @@
-- cards no trello
-- usar template da planilha de testes
-- Seguir os passos do Projeto 2
+- Seguir os passos do Projeto 2 (parei no str)
+- Preencher a planilha com os testes automatizados, cenario de testes ....
+- Fazer mais daily e weekly reports com os testes que nao estao nestes reports
 - Seguir a estrutura das pastas que estao no projeto 2
 - Nos testes de caso manuais, preencher a planilha do excel e adicionar fotos, videos e reports de bugs
