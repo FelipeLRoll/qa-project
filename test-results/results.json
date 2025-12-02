@@ -1,0 +1,1785 @@
+{
+  "config": {
+    "configFile": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\playwright.config.js",
+    "rootDir": "E:/ROLL/QA/Projetos/Projeto 1/qa-project/4-automated-tests/playwright/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 8
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "E:/ROLL/QA/Projetos/Projeto 1/qa-project/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 8
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "E:/ROLL/QA/Projetos/Projeto 1/qa-project/4-automated-tests/playwright/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "E:/ROLL/QA/Projetos/Projeto 1/qa-project/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 8
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "E:/ROLL/QA/Projetos/Projeto 1/qa-project/4-automated-tests/playwright/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.57.0",
+    "workers": 8,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "auth.spec.js",
+      "file": "auth.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Autenticação - Login e Logout",
+          "file": "auth.spec.js",
+          "line": 36,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-AUTO-001: Deve fazer login com credenciais válidas",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 8788,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.css-1hwfws3')\nExpected: visible\nError: strict mode violation: locator('.css-1hwfws3') resolved to 2 elements:\n    1) <div class=\" css-1hwfws3\">…</div> aka locator('div').filter({ hasText: /^Select Username$/ }).nth(2)\n    2) <div class=\" css-1hwfws3\">…</div> aka locator('div').filter({ hasText: /^Select Password$/ }).nth(2)\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.css-1hwfws3')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.css-1hwfws3')\nExpected: visible\nError: strict mode violation: locator('.css-1hwfws3') resolved to 2 elements:\n    1) <div class=\" css-1hwfws3\">…</div> aka locator('div').filter({ hasText: /^Select Username$/ }).nth(2)\n    2) <div class=\" css-1hwfws3\">…</div> aka locator('div').filter({ hasText: /^Select Password$/ }).nth(2)\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.css-1hwfws3')\u001b[22m\n\n    at E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\auth.spec.js:44:48",
+                        "location": {
+                          "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\auth.spec.js",
+                          "column": 48,
+                          "line": 44
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 42 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#signin\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 43 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 44 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\".css-1hwfws3\"\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 45 |\u001b[39m     \n \u001b[90m 46 |\u001b[39m     \u001b[90m// Usuário\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#username\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\auth.spec.js",
+                            "column": 48,
+                            "line": 44
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.css-1hwfws3')\nExpected: visible\nError: strict mode violation: locator('.css-1hwfws3') resolved to 2 elements:\n    1) <div class=\" css-1hwfws3\">…</div> aka locator('div').filter({ hasText: /^Select Username$/ }).nth(2)\n    2) <div class=\" css-1hwfws3\">…</div> aka locator('div').filter({ hasText: /^Select Password$/ }).nth(2)\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.css-1hwfws3')\u001b[22m\n\n\n\u001b[0m \u001b[90m 42 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#signin\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 43 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 44 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\".css-1hwfws3\"\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 45 |\u001b[39m     \n \u001b[90m 46 |\u001b[39m     \u001b[90m// Usuário\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#username\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\auth.spec.js:44:48\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T18:47:02.901Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\auth-Autenticação---Login--b0ca9-gin-com-credenciais-válidas-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\auth-Autenticação---Login--b0ca9-gin-com-credenciais-válidas-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\auth-Autenticação---Login--b0ca9-gin-com-credenciais-válidas-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\auth.spec.js",
+                        "column": 48,
+                        "line": 44
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "d5ed79a6b333c2ba7209-26b2a4d625b2d8ceadef",
+              "file": "auth.spec.js",
+              "line": 39,
+              "column": 7
+            },
+            {
+              "title": "TC-AUTO-002: Não deve permitir login com username inválido",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 8763,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.css-1hwfws3')\nExpected: visible\nError: strict mode violation: locator('.css-1hwfws3') resolved to 2 elements:\n    1) <div class=\" css-1hwfws3\">…</div> aka locator('div').filter({ hasText: /^Select Username$/ }).nth(2)\n    2) <div class=\" css-1hwfws3\">…</div> aka locator('div').filter({ hasText: /^Select Password$/ }).nth(2)\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.css-1hwfws3')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.css-1hwfws3')\nExpected: visible\nError: strict mode violation: locator('.css-1hwfws3') resolved to 2 elements:\n    1) <div class=\" css-1hwfws3\">…</div> aka locator('div').filter({ hasText: /^Select Username$/ }).nth(2)\n    2) <div class=\" css-1hwfws3\">…</div> aka locator('div').filter({ hasText: /^Select Password$/ }).nth(2)\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.css-1hwfws3')\u001b[22m\n\n    at E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\auth.spec.js:80:48",
+                        "location": {
+                          "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\auth.spec.js",
+                          "column": 48,
+                          "line": 80
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 78 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#signin\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 79 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 80 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\".css-1hwfws3\"\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 81 |\u001b[39m\n \u001b[90m 82 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#username\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 83 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#username\"\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m\"randomuser\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\auth.spec.js",
+                            "column": 48,
+                            "line": 80
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.css-1hwfws3')\nExpected: visible\nError: strict mode violation: locator('.css-1hwfws3') resolved to 2 elements:\n    1) <div class=\" css-1hwfws3\">…</div> aka locator('div').filter({ hasText: /^Select Username$/ }).nth(2)\n    2) <div class=\" css-1hwfws3\">…</div> aka locator('div').filter({ hasText: /^Select Password$/ }).nth(2)\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.css-1hwfws3')\u001b[22m\n\n\n\u001b[0m \u001b[90m 78 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#signin\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 79 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 80 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\".css-1hwfws3\"\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 81 |\u001b[39m\n \u001b[90m 82 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#username\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 83 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#username\"\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m\"randomuser\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\auth.spec.js:80:48\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T18:47:02.877Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\auth-Autenticação---Login--4a242-login-com-username-inválido-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\auth-Autenticação---Login--4a242-login-com-username-inválido-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\auth-Autenticação---Login--4a242-login-com-username-inválido-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\auth.spec.js",
+                        "column": 48,
+                        "line": 80
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "d5ed79a6b333c2ba7209-330f7ecf1ca781fd9038",
+              "file": "auth.spec.js",
+              "line": 75,
+              "column": 7
+            },
+            {
+              "title": "TC-AUTO-003: Não deve permitir login com senha inválida",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 8670,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.css-1hwfws3')\nExpected: visible\nError: strict mode violation: locator('.css-1hwfws3') resolved to 2 elements:\n    1) <div class=\" css-1hwfws3\">…</div> aka locator('div').filter({ hasText: /^Select Username$/ }).nth(2)\n    2) <div class=\" css-1hwfws3\">…</div> aka locator('div').filter({ hasText: /^Select Password$/ }).nth(2)\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.css-1hwfws3')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.css-1hwfws3')\nExpected: visible\nError: strict mode violation: locator('.css-1hwfws3') resolved to 2 elements:\n    1) <div class=\" css-1hwfws3\">…</div> aka locator('div').filter({ hasText: /^Select Username$/ }).nth(2)\n    2) <div class=\" css-1hwfws3\">…</div> aka locator('div').filter({ hasText: /^Select Password$/ }).nth(2)\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.css-1hwfws3')\u001b[22m\n\n    at E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\auth.spec.js:105:48",
+                        "location": {
+                          "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\auth.spec.js",
+                          "column": 48,
+                          "line": 105
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 103 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#signin\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 104 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 105 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\".css-1hwfws3\"\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 106 |\u001b[39m\n \u001b[90m 107 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#username\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 108 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#username\"\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m\"demouser\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\auth.spec.js",
+                            "column": 48,
+                            "line": 105
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.css-1hwfws3')\nExpected: visible\nError: strict mode violation: locator('.css-1hwfws3') resolved to 2 elements:\n    1) <div class=\" css-1hwfws3\">…</div> aka locator('div').filter({ hasText: /^Select Username$/ }).nth(2)\n    2) <div class=\" css-1hwfws3\">…</div> aka locator('div').filter({ hasText: /^Select Password$/ }).nth(2)\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.css-1hwfws3')\u001b[22m\n\n\n\u001b[0m \u001b[90m 103 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#signin\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 104 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 105 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\".css-1hwfws3\"\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 106 |\u001b[39m\n \u001b[90m 107 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#username\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 108 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#username\"\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m\"demouser\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\auth.spec.js:105:48\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T18:47:02.905Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\auth-Autenticação---Login--b80c4-ir-login-com-senha-inválida-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\auth-Autenticação---Login--b80c4-ir-login-com-senha-inválida-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\auth-Autenticação---Login--b80c4-ir-login-com-senha-inválida-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\auth.spec.js",
+                        "column": 48,
+                        "line": 105
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "d5ed79a6b333c2ba7209-26877fbe4173bffa7381",
+              "file": "auth.spec.js",
+              "line": 100,
+              "column": 7
+            },
+            {
+              "title": "TC-AUTO-004: Deve fazer logout com sucesso",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "failed",
+                      "duration": 8739,
+                      "error": {
+                        "message": "Error: locator.fill: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"username\" class=\" css-2b097c-container\">…</div>\u001b[22m\n\u001b[2m    - fill(\"demouser\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n",
+                        "stack": "Error: locator.fill: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"username\" class=\" css-2b097c-container\">…</div>\u001b[22m\n\u001b[2m    - fill(\"demouser\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n    at fazLogin (E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\auth.spec.js:24:35)\n    at E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\auth.spec.js:131:5",
+                        "location": {
+                          "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\auth.spec.js",
+                          "column": 35,
+                          "line": 24
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 22 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#username'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 23 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'#username'\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m'demouser'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 24 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#username'\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m'demouser'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 25 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mkeyboard\u001b[33m.\u001b[39mpress(\u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 26 |\u001b[39m   \n \u001b[90m 27 |\u001b[39m   \u001b[90m// Senha\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\auth.spec.js",
+                            "column": 35,
+                            "line": 24
+                          },
+                          "message": "Error: locator.fill: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"username\" class=\" css-2b097c-container\">…</div>\u001b[22m\n\u001b[2m    - fill(\"demouser\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n\n\u001b[0m \u001b[90m 22 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#username'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 23 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'#username'\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m'demouser'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 24 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#username'\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m'demouser'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 25 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mkeyboard\u001b[33m.\u001b[39mpress(\u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 26 |\u001b[39m   \n \u001b[90m 27 |\u001b[39m   \u001b[90m// Senha\u001b[39m\u001b[0m\n\u001b[2m    at fazLogin (E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\auth.spec.js:24:35)\u001b[22m\n\u001b[2m    at E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\auth.spec.js:131:5\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T18:47:02.908Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\auth-Autenticação---Login--cceae-ve-fazer-logout-com-sucesso-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\auth-Autenticação---Login--cceae-ve-fazer-logout-com-sucesso-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\auth-Autenticação---Login--cceae-ve-fazer-logout-com-sucesso-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\auth.spec.js",
+                        "column": 35,
+                        "line": 24
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "d5ed79a6b333c2ba7209-da4c30bc132f75f5759e",
+              "file": "auth.spec.js",
+              "line": 129,
+              "column": 7
+            },
+            {
+              "title": "TC-AUTO-001: Deve fazer login com credenciais válidas",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 4,
+                      "status": "failed",
+                      "duration": 8734,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.css-1hwfws3')\nExpected: visible\nError: strict mode violation: locator('.css-1hwfws3') resolved to 2 elements:\n    1) <div class=\" css-1hwfws3\">…</div> aka locator('div').filter({ hasText: /^Select Username$/ }).nth(2)\n    2) <div class=\" css-1hwfws3\">…</div> aka locator('div').filter({ hasText: /^Select Password$/ }).nth(2)\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.css-1hwfws3')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.css-1hwfws3')\nExpected: visible\nError: strict mode violation: locator('.css-1hwfws3') resolved to 2 elements:\n    1) <div class=\" css-1hwfws3\">…</div> aka locator('div').filter({ hasText: /^Select Username$/ }).nth(2)\n    2) <div class=\" css-1hwfws3\">…</div> aka locator('div').filter({ hasText: /^Select Password$/ }).nth(2)\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.css-1hwfws3')\u001b[22m\n\n    at E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\auth.spec.js:44:48",
+                        "location": {
+                          "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\auth.spec.js",
+                          "column": 48,
+                          "line": 44
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 42 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#signin\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 43 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 44 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\".css-1hwfws3\"\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 45 |\u001b[39m     \n \u001b[90m 46 |\u001b[39m     \u001b[90m// Usuário\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#username\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\auth.spec.js",
+                            "column": 48,
+                            "line": 44
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.css-1hwfws3')\nExpected: visible\nError: strict mode violation: locator('.css-1hwfws3') resolved to 2 elements:\n    1) <div class=\" css-1hwfws3\">…</div> aka locator('div').filter({ hasText: /^Select Username$/ }).nth(2)\n    2) <div class=\" css-1hwfws3\">…</div> aka locator('div').filter({ hasText: /^Select Password$/ }).nth(2)\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.css-1hwfws3')\u001b[22m\n\n\n\u001b[0m \u001b[90m 42 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#signin\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 43 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 44 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\".css-1hwfws3\"\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 45 |\u001b[39m     \n \u001b[90m 46 |\u001b[39m     \u001b[90m// Usuário\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#username\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\auth.spec.js:44:48\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T18:47:10.296Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\auth-Autenticação---Login--b0ca9-gin-com-credenciais-válidas-firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\auth-Autenticação---Login--b0ca9-gin-com-credenciais-válidas-firefox\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\auth-Autenticação---Login--b0ca9-gin-com-credenciais-válidas-firefox\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\auth.spec.js",
+                        "column": 48,
+                        "line": 44
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "d5ed79a6b333c2ba7209-c9fb9583b8a0900c2ae3",
+              "file": "auth.spec.js",
+              "line": 39,
+              "column": 7
+            },
+            {
+              "title": "TC-AUTO-002: Não deve permitir login com username inválido",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 9122,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.css-1hwfws3')\nExpected: visible\nError: strict mode violation: locator('.css-1hwfws3') resolved to 2 elements:\n    1) <div class=\" css-1hwfws3\">…</div> aka locator('div').filter({ hasText: /^Select Username$/ }).nth(2)\n    2) <div class=\" css-1hwfws3\">…</div> aka locator('div').filter({ hasText: /^Select Password$/ }).nth(2)\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.css-1hwfws3')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.css-1hwfws3')\nExpected: visible\nError: strict mode violation: locator('.css-1hwfws3') resolved to 2 elements:\n    1) <div class=\" css-1hwfws3\">…</div> aka locator('div').filter({ hasText: /^Select Username$/ }).nth(2)\n    2) <div class=\" css-1hwfws3\">…</div> aka locator('div').filter({ hasText: /^Select Password$/ }).nth(2)\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.css-1hwfws3')\u001b[22m\n\n    at E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\auth.spec.js:80:48",
+                        "location": {
+                          "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\auth.spec.js",
+                          "column": 48,
+                          "line": 80
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 78 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#signin\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 79 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 80 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\".css-1hwfws3\"\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 81 |\u001b[39m\n \u001b[90m 82 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#username\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 83 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#username\"\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m\"randomuser\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\auth.spec.js",
+                            "column": 48,
+                            "line": 80
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.css-1hwfws3')\nExpected: visible\nError: strict mode violation: locator('.css-1hwfws3') resolved to 2 elements:\n    1) <div class=\" css-1hwfws3\">…</div> aka locator('div').filter({ hasText: /^Select Username$/ }).nth(2)\n    2) <div class=\" css-1hwfws3\">…</div> aka locator('div').filter({ hasText: /^Select Password$/ }).nth(2)\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.css-1hwfws3')\u001b[22m\n\n\n\u001b[0m \u001b[90m 78 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#signin\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 79 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 80 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\".css-1hwfws3\"\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 81 |\u001b[39m\n \u001b[90m 82 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#username\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 83 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#username\"\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m\"randomuser\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\auth.spec.js:80:48\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T18:47:12.240Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\auth-Autenticação---Login--4a242-login-com-username-inválido-firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\auth-Autenticação---Login--4a242-login-com-username-inválido-firefox\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\auth-Autenticação---Login--4a242-login-com-username-inválido-firefox\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\auth.spec.js",
+                        "column": 48,
+                        "line": 80
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "d5ed79a6b333c2ba7209-e8a449b0ffb05e31a12c",
+              "file": "auth.spec.js",
+              "line": 75,
+              "column": 7
+            },
+            {
+              "title": "TC-AUTO-003: Não deve permitir login com senha inválida",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 13,
+                      "parallelIndex": 3,
+                      "status": "failed",
+                      "duration": 9353,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.css-1hwfws3')\nExpected: visible\nError: strict mode violation: locator('.css-1hwfws3') resolved to 2 elements:\n    1) <div class=\" css-1hwfws3\">…</div> aka locator('div').filter({ hasText: /^Select Username$/ }).nth(2)\n    2) <div class=\" css-1hwfws3\">…</div> aka locator('div').filter({ hasText: /^Select Password$/ }).nth(2)\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.css-1hwfws3')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.css-1hwfws3')\nExpected: visible\nError: strict mode violation: locator('.css-1hwfws3') resolved to 2 elements:\n    1) <div class=\" css-1hwfws3\">…</div> aka locator('div').filter({ hasText: /^Select Username$/ }).nth(2)\n    2) <div class=\" css-1hwfws3\">…</div> aka locator('div').filter({ hasText: /^Select Password$/ }).nth(2)\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.css-1hwfws3')\u001b[22m\n\n    at E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\auth.spec.js:105:48",
+                        "location": {
+                          "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\auth.spec.js",
+                          "column": 48,
+                          "line": 105
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 103 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#signin\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 104 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 105 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\".css-1hwfws3\"\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 106 |\u001b[39m\n \u001b[90m 107 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#username\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 108 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#username\"\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m\"demouser\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\auth.spec.js",
+                            "column": 48,
+                            "line": 105
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.css-1hwfws3')\nExpected: visible\nError: strict mode violation: locator('.css-1hwfws3') resolved to 2 elements:\n    1) <div class=\" css-1hwfws3\">…</div> aka locator('div').filter({ hasText: /^Select Username$/ }).nth(2)\n    2) <div class=\" css-1hwfws3\">…</div> aka locator('div').filter({ hasText: /^Select Password$/ }).nth(2)\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.css-1hwfws3')\u001b[22m\n\n\n\u001b[0m \u001b[90m 103 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#signin\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 104 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 105 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\".css-1hwfws3\"\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 106 |\u001b[39m\n \u001b[90m 107 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#username\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 108 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"#username\"\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m\"demouser\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\auth.spec.js:105:48\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T18:47:12.275Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\auth-Autenticação---Login--b80c4-ir-login-com-senha-inválida-firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\auth-Autenticação---Login--b80c4-ir-login-com-senha-inválida-firefox\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\auth-Autenticação---Login--b80c4-ir-login-com-senha-inválida-firefox\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\auth.spec.js",
+                        "column": 48,
+                        "line": 105
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "d5ed79a6b333c2ba7209-ec3139ea33cd6c5ccd1b",
+              "file": "auth.spec.js",
+              "line": 100,
+              "column": 7
+            },
+            {
+              "title": "TC-AUTO-004: Deve fazer logout com sucesso",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 9360,
+                      "error": {
+                        "message": "Error: locator.fill: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"username\" class=\" css-2b097c-container\">…</div>\u001b[22m\n\u001b[2m    - fill(\"demouser\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n",
+                        "stack": "Error: locator.fill: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"username\" class=\" css-2b097c-container\">…</div>\u001b[22m\n\u001b[2m    - fill(\"demouser\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n    at fazLogin (E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\auth.spec.js:24:35)\n    at E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\auth.spec.js:131:5",
+                        "location": {
+                          "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\auth.spec.js",
+                          "column": 35,
+                          "line": 24
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 22 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#username'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 23 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'#username'\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m'demouser'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 24 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#username'\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m'demouser'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 25 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mkeyboard\u001b[33m.\u001b[39mpress(\u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 26 |\u001b[39m   \n \u001b[90m 27 |\u001b[39m   \u001b[90m// Senha\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\auth.spec.js",
+                            "column": 35,
+                            "line": 24
+                          },
+                          "message": "Error: locator.fill: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"username\" class=\" css-2b097c-container\">…</div>\u001b[22m\n\u001b[2m    - fill(\"demouser\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n\n\u001b[0m \u001b[90m 22 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#username'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 23 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'#username'\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m'demouser'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 24 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#username'\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m'demouser'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 25 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mkeyboard\u001b[33m.\u001b[39mpress(\u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 26 |\u001b[39m   \n \u001b[90m 27 |\u001b[39m   \u001b[90m// Senha\u001b[39m\u001b[0m\n\u001b[2m    at fazLogin (E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\auth.spec.js:24:35)\u001b[22m\n\u001b[2m    at E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\auth.spec.js:131:5\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T18:47:12.281Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\auth-Autenticação---Login--cceae-ve-fazer-logout-com-sucesso-firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\auth-Autenticação---Login--cceae-ve-fazer-logout-com-sucesso-firefox\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\auth-Autenticação---Login--cceae-ve-fazer-logout-com-sucesso-firefox\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\auth.spec.js",
+                        "column": 35,
+                        "line": 24
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "d5ed79a6b333c2ba7209-edc5f9e45dd7b3ddcab9",
+              "file": "auth.spec.js",
+              "line": 129,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "cart.spec.js",
+      "file": "cart.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Carrinho",
+          "file": "cart.spec.js",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-AUTO-005: Deve adicionar produto no carrinho",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "failed",
+                      "duration": 6762,
+                      "error": {
+                        "message": "Error: page.fill: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"username\" class=\" css-2b097c-container\">…</div>\u001b[22m\n\u001b[2m    - fill(\"demouser\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n",
+                        "stack": "Error: page.fill: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"username\" class=\" css-2b097c-container\">…</div>\u001b[22m\n\u001b[2m    - fill(\"demouser\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n    at login (E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js:9:14)\n    at E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\cart.spec.js:11:5",
+                        "location": {
+                          "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js",
+                          "column": 14,
+                          "line": 9
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\helpers\\auth.js:9\n\n\u001b[0m \u001b[90m  7 |\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m login(page\u001b[33m,\u001b[39m username \u001b[33m=\u001b[39m \u001b[32m'demouser'\u001b[39m\u001b[33m,\u001b[39m password \u001b[33m=\u001b[39m \u001b[32m'testingisfun99'\u001b[39m) {\n \u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'#signin'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m username)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m password)\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js",
+                            "column": 14,
+                            "line": 9
+                          },
+                          "message": "Error: page.fill: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"username\" class=\" css-2b097c-container\">…</div>\u001b[22m\n\u001b[2m    - fill(\"demouser\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\helpers\\auth.js:9\n\n\u001b[0m \u001b[90m  7 |\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m login(page\u001b[33m,\u001b[39m username \u001b[33m=\u001b[39m \u001b[32m'demouser'\u001b[39m\u001b[33m,\u001b[39m password \u001b[33m=\u001b[39m \u001b[32m'testingisfun99'\u001b[39m) {\n \u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'#signin'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m username)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m password)\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at login (E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js:9:14)\u001b[22m\n\u001b[2m    at E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\cart.spec.js:11:5\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T18:47:02.891Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\cart-Carrinho-TC-AUTO-005-Deve-adicionar-produto-no-carrinho-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\cart-Carrinho-TC-AUTO-005-Deve-adicionar-produto-no-carrinho-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\cart-Carrinho-TC-AUTO-005-Deve-adicionar-produto-no-carrinho-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js",
+                        "column": 14,
+                        "line": 9
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "ceb0bea1dd12be5aadb7-b35631b4b6d9d534aaca",
+              "file": "cart.spec.js",
+              "line": 10,
+              "column": 7
+            },
+            {
+              "title": "TC-AUTO-006: Deve remover produto do carrinho",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 5,
+                      "status": "failed",
+                      "duration": 6569,
+                      "error": {
+                        "message": "Error: page.fill: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"username\" class=\" css-2b097c-container\">…</div>\u001b[22m\n\u001b[2m    - fill(\"demouser\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n",
+                        "stack": "Error: page.fill: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"username\" class=\" css-2b097c-container\">…</div>\u001b[22m\n\u001b[2m    - fill(\"demouser\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n    at login (E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js:9:14)\n    at E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\cart.spec.js:27:5",
+                        "location": {
+                          "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js",
+                          "column": 14,
+                          "line": 9
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\helpers\\auth.js:9\n\n\u001b[0m \u001b[90m  7 |\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m login(page\u001b[33m,\u001b[39m username \u001b[33m=\u001b[39m \u001b[32m'demouser'\u001b[39m\u001b[33m,\u001b[39m password \u001b[33m=\u001b[39m \u001b[32m'testingisfun99'\u001b[39m) {\n \u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'#signin'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m username)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m password)\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js",
+                            "column": 14,
+                            "line": 9
+                          },
+                          "message": "Error: page.fill: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"username\" class=\" css-2b097c-container\">…</div>\u001b[22m\n\u001b[2m    - fill(\"demouser\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\helpers\\auth.js:9\n\n\u001b[0m \u001b[90m  7 |\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m login(page\u001b[33m,\u001b[39m username \u001b[33m=\u001b[39m \u001b[32m'demouser'\u001b[39m\u001b[33m,\u001b[39m password \u001b[33m=\u001b[39m \u001b[32m'testingisfun99'\u001b[39m) {\n \u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'#signin'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m username)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m password)\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at login (E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js:9:14)\u001b[22m\n\u001b[2m    at E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\cart.spec.js:27:5\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T18:47:02.903Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\cart-Carrinho-TC-AUTO-006-Deve-remover-produto-do-carrinho-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\cart-Carrinho-TC-AUTO-006-Deve-remover-produto-do-carrinho-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\cart-Carrinho-TC-AUTO-006-Deve-remover-produto-do-carrinho-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js",
+                        "column": 14,
+                        "line": 9
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "ceb0bea1dd12be5aadb7-c5e4c75202ff0c6a96ea",
+              "file": "cart.spec.js",
+              "line": 26,
+              "column": 7
+            },
+            {
+              "title": "TC-AUTO-007: Deve calcular o total do carrinho",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 6,
+                      "status": "failed",
+                      "duration": 6552,
+                      "error": {
+                        "message": "Error: page.fill: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"username\" class=\" css-2b097c-container\">…</div>\u001b[22m\n\u001b[2m    - fill(\"demouser\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n",
+                        "stack": "Error: page.fill: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"username\" class=\" css-2b097c-container\">…</div>\u001b[22m\n\u001b[2m    - fill(\"demouser\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n    at login (E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js:9:14)\n    at E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\cart.spec.js:38:5",
+                        "location": {
+                          "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js",
+                          "column": 14,
+                          "line": 9
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\helpers\\auth.js:9\n\n\u001b[0m \u001b[90m  7 |\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m login(page\u001b[33m,\u001b[39m username \u001b[33m=\u001b[39m \u001b[32m'demouser'\u001b[39m\u001b[33m,\u001b[39m password \u001b[33m=\u001b[39m \u001b[32m'testingisfun99'\u001b[39m) {\n \u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'#signin'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m username)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m password)\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js",
+                            "column": 14,
+                            "line": 9
+                          },
+                          "message": "Error: page.fill: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"username\" class=\" css-2b097c-container\">…</div>\u001b[22m\n\u001b[2m    - fill(\"demouser\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\helpers\\auth.js:9\n\n\u001b[0m \u001b[90m  7 |\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m login(page\u001b[33m,\u001b[39m username \u001b[33m=\u001b[39m \u001b[32m'demouser'\u001b[39m\u001b[33m,\u001b[39m password \u001b[33m=\u001b[39m \u001b[32m'testingisfun99'\u001b[39m) {\n \u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'#signin'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m username)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m password)\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at login (E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js:9:14)\u001b[22m\n\u001b[2m    at E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\cart.spec.js:38:5\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T18:47:02.914Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\cart-Carrinho-TC-AUTO-007-Deve-calcular-o-total-do-carrinho-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\cart-Carrinho-TC-AUTO-007-Deve-calcular-o-total-do-carrinho-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\cart-Carrinho-TC-AUTO-007-Deve-calcular-o-total-do-carrinho-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js",
+                        "column": 14,
+                        "line": 9
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "ceb0bea1dd12be5aadb7-ca3f77d63f86df0be8bd",
+              "file": "cart.spec.js",
+              "line": 37,
+              "column": 7
+            },
+            {
+              "title": "TC-AUTO-005: Deve adicionar produto no carrinho",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 15,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 7648,
+                      "error": {
+                        "message": "Error: page.fill: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"username\" class=\" css-2b097c-container\">…</div>\u001b[22m\n\u001b[2m    - fill(\"demouser\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n",
+                        "stack": "Error: page.fill: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"username\" class=\" css-2b097c-container\">…</div>\u001b[22m\n\u001b[2m    - fill(\"demouser\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n    at login (E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js:9:14)\n    at E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\cart.spec.js:11:5",
+                        "location": {
+                          "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js",
+                          "column": 14,
+                          "line": 9
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\helpers\\auth.js:9\n\n\u001b[0m \u001b[90m  7 |\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m login(page\u001b[33m,\u001b[39m username \u001b[33m=\u001b[39m \u001b[32m'demouser'\u001b[39m\u001b[33m,\u001b[39m password \u001b[33m=\u001b[39m \u001b[32m'testingisfun99'\u001b[39m) {\n \u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'#signin'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m username)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m password)\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js",
+                            "column": 14,
+                            "line": 9
+                          },
+                          "message": "Error: page.fill: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"username\" class=\" css-2b097c-container\">…</div>\u001b[22m\n\u001b[2m    - fill(\"demouser\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\helpers\\auth.js:9\n\n\u001b[0m \u001b[90m  7 |\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m login(page\u001b[33m,\u001b[39m username \u001b[33m=\u001b[39m \u001b[32m'demouser'\u001b[39m\u001b[33m,\u001b[39m password \u001b[33m=\u001b[39m \u001b[32m'testingisfun99'\u001b[39m) {\n \u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'#signin'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m username)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m password)\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at login (E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js:9:14)\u001b[22m\n\u001b[2m    at E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\cart.spec.js:11:5\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T18:47:12.306Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\cart-Carrinho-TC-AUTO-005-Deve-adicionar-produto-no-carrinho-firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\cart-Carrinho-TC-AUTO-005-Deve-adicionar-produto-no-carrinho-firefox\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\cart-Carrinho-TC-AUTO-005-Deve-adicionar-produto-no-carrinho-firefox\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js",
+                        "column": 14,
+                        "line": 9
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "ceb0bea1dd12be5aadb7-743faa3c71e0b067dbe2",
+              "file": "cart.spec.js",
+              "line": 10,
+              "column": 7
+            },
+            {
+              "title": "TC-AUTO-006: Deve remover produto do carrinho",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 16,
+                      "parallelIndex": 7,
+                      "status": "failed",
+                      "duration": 7330,
+                      "error": {
+                        "message": "Error: page.fill: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"username\" class=\" css-2b097c-container\">…</div>\u001b[22m\n\u001b[2m    - fill(\"demouser\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n",
+                        "stack": "Error: page.fill: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"username\" class=\" css-2b097c-container\">…</div>\u001b[22m\n\u001b[2m    - fill(\"demouser\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n    at login (E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js:9:14)\n    at E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\cart.spec.js:27:5",
+                        "location": {
+                          "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js",
+                          "column": 14,
+                          "line": 9
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\helpers\\auth.js:9\n\n\u001b[0m \u001b[90m  7 |\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m login(page\u001b[33m,\u001b[39m username \u001b[33m=\u001b[39m \u001b[32m'demouser'\u001b[39m\u001b[33m,\u001b[39m password \u001b[33m=\u001b[39m \u001b[32m'testingisfun99'\u001b[39m) {\n \u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'#signin'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m username)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m password)\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js",
+                            "column": 14,
+                            "line": 9
+                          },
+                          "message": "Error: page.fill: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"username\" class=\" css-2b097c-container\">…</div>\u001b[22m\n\u001b[2m    - fill(\"demouser\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\helpers\\auth.js:9\n\n\u001b[0m \u001b[90m  7 |\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m login(page\u001b[33m,\u001b[39m username \u001b[33m=\u001b[39m \u001b[32m'demouser'\u001b[39m\u001b[33m,\u001b[39m password \u001b[33m=\u001b[39m \u001b[32m'testingisfun99'\u001b[39m) {\n \u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'#signin'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m username)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m password)\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at login (E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js:9:14)\u001b[22m\n\u001b[2m    at E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\cart.spec.js:27:5\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T18:47:17.378Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\cart-Carrinho-TC-AUTO-006-Deve-remover-produto-do-carrinho-firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\cart-Carrinho-TC-AUTO-006-Deve-remover-produto-do-carrinho-firefox\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\cart-Carrinho-TC-AUTO-006-Deve-remover-produto-do-carrinho-firefox\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js",
+                        "column": 14,
+                        "line": 9
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "ceb0bea1dd12be5aadb7-b3a8af5f8fc800a17906",
+              "file": "cart.spec.js",
+              "line": 26,
+              "column": 7
+            },
+            {
+              "title": "TC-AUTO-007: Deve calcular o total do carrinho",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 17,
+                      "parallelIndex": 6,
+                      "status": "failed",
+                      "duration": 7465,
+                      "error": {
+                        "message": "Error: page.fill: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"username\" class=\" css-2b097c-container\">…</div>\u001b[22m\n\u001b[2m    - fill(\"demouser\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n",
+                        "stack": "Error: page.fill: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"username\" class=\" css-2b097c-container\">…</div>\u001b[22m\n\u001b[2m    - fill(\"demouser\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n    at login (E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js:9:14)\n    at E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\cart.spec.js:38:5",
+                        "location": {
+                          "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js",
+                          "column": 14,
+                          "line": 9
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\helpers\\auth.js:9\n\n\u001b[0m \u001b[90m  7 |\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m login(page\u001b[33m,\u001b[39m username \u001b[33m=\u001b[39m \u001b[32m'demouser'\u001b[39m\u001b[33m,\u001b[39m password \u001b[33m=\u001b[39m \u001b[32m'testingisfun99'\u001b[39m) {\n \u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'#signin'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m username)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m password)\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js",
+                            "column": 14,
+                            "line": 9
+                          },
+                          "message": "Error: page.fill: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"username\" class=\" css-2b097c-container\">…</div>\u001b[22m\n\u001b[2m    - fill(\"demouser\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\helpers\\auth.js:9\n\n\u001b[0m \u001b[90m  7 |\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m login(page\u001b[33m,\u001b[39m username \u001b[33m=\u001b[39m \u001b[32m'demouser'\u001b[39m\u001b[33m,\u001b[39m password \u001b[33m=\u001b[39m \u001b[32m'testingisfun99'\u001b[39m) {\n \u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'#signin'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m username)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m password)\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at login (E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js:9:14)\u001b[22m\n\u001b[2m    at E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\cart.spec.js:38:5\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T18:47:17.605Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\cart-Carrinho-TC-AUTO-007-Deve-calcular-o-total-do-carrinho-firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\cart-Carrinho-TC-AUTO-007-Deve-calcular-o-total-do-carrinho-firefox\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\cart-Carrinho-TC-AUTO-007-Deve-calcular-o-total-do-carrinho-firefox\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js",
+                        "column": 14,
+                        "line": 9
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "ceb0bea1dd12be5aadb7-8a3187c4e46f3058f8f4",
+              "file": "cart.spec.js",
+              "line": 37,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "e2e-flow.spec.js",
+      "file": "e2e-flow.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Fluxo de Compra",
+          "file": "e2e-flow.spec.js",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-AUTO-008: Deve completar o fluxo de compra",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 7,
+                      "status": "failed",
+                      "duration": 6499,
+                      "error": {
+                        "message": "Error: page.fill: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"username\" class=\" css-2b097c-container\">…</div>\u001b[22m\n\u001b[2m    - fill(\"demouser\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n",
+                        "stack": "Error: page.fill: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"username\" class=\" css-2b097c-container\">…</div>\u001b[22m\n\u001b[2m    - fill(\"demouser\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n    at login (E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js:9:14)\n    at E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\e2e-flow.spec.js:11:5",
+                        "location": {
+                          "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js",
+                          "column": 14,
+                          "line": 9
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\helpers\\auth.js:9\n\n\u001b[0m \u001b[90m  7 |\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m login(page\u001b[33m,\u001b[39m username \u001b[33m=\u001b[39m \u001b[32m'demouser'\u001b[39m\u001b[33m,\u001b[39m password \u001b[33m=\u001b[39m \u001b[32m'testingisfun99'\u001b[39m) {\n \u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'#signin'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m username)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m password)\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js",
+                            "column": 14,
+                            "line": 9
+                          },
+                          "message": "Error: page.fill: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"username\" class=\" css-2b097c-container\">…</div>\u001b[22m\n\u001b[2m    - fill(\"demouser\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\helpers\\auth.js:9\n\n\u001b[0m \u001b[90m  7 |\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m login(page\u001b[33m,\u001b[39m username \u001b[33m=\u001b[39m \u001b[32m'demouser'\u001b[39m\u001b[33m,\u001b[39m password \u001b[33m=\u001b[39m \u001b[32m'testingisfun99'\u001b[39m) {\n \u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'#signin'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m username)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m password)\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at login (E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js:9:14)\u001b[22m\n\u001b[2m    at E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\e2e-flow.spec.js:11:5\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T18:47:02.880Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\e2e-flow-Fluxo-de-Compra-T-446f3-completar-o-fluxo-de-compra-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\e2e-flow-Fluxo-de-Compra-T-446f3-completar-o-fluxo-de-compra-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\e2e-flow-Fluxo-de-Compra-T-446f3-completar-o-fluxo-de-compra-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js",
+                        "column": 14,
+                        "line": 9
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a1cfe142301e1d7fef14-17e07dfc729af9591edd",
+              "file": "e2e-flow.spec.js",
+              "line": 10,
+              "column": 3
+            },
+            {
+              "title": "TC-AUTO-008: Deve completar o fluxo de compra",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 18,
+                      "parallelIndex": 5,
+                      "status": "failed",
+                      "duration": 7348,
+                      "error": {
+                        "message": "Error: page.fill: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"username\" class=\" css-2b097c-container\">…</div>\u001b[22m\n\u001b[2m    - fill(\"demouser\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n",
+                        "stack": "Error: page.fill: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"username\" class=\" css-2b097c-container\">…</div>\u001b[22m\n\u001b[2m    - fill(\"demouser\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n    at login (E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js:9:14)\n    at E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\e2e-flow.spec.js:11:5",
+                        "location": {
+                          "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js",
+                          "column": 14,
+                          "line": 9
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\helpers\\auth.js:9\n\n\u001b[0m \u001b[90m  7 |\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m login(page\u001b[33m,\u001b[39m username \u001b[33m=\u001b[39m \u001b[32m'demouser'\u001b[39m\u001b[33m,\u001b[39m password \u001b[33m=\u001b[39m \u001b[32m'testingisfun99'\u001b[39m) {\n \u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'#signin'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m username)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m password)\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js",
+                            "column": 14,
+                            "line": 9
+                          },
+                          "message": "Error: page.fill: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"username\" class=\" css-2b097c-container\">…</div>\u001b[22m\n\u001b[2m    - fill(\"demouser\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\helpers\\auth.js:9\n\n\u001b[0m \u001b[90m  7 |\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m login(page\u001b[33m,\u001b[39m username \u001b[33m=\u001b[39m \u001b[32m'demouser'\u001b[39m\u001b[33m,\u001b[39m password \u001b[33m=\u001b[39m \u001b[32m'testingisfun99'\u001b[39m) {\n \u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'#signin'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m username)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m password)\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at login (E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js:9:14)\u001b[22m\n\u001b[2m    at E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\e2e-flow.spec.js:11:5\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T18:47:17.725Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\e2e-flow-Fluxo-de-Compra-T-446f3-completar-o-fluxo-de-compra-firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\e2e-flow-Fluxo-de-Compra-T-446f3-completar-o-fluxo-de-compra-firefox\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\e2e-flow-Fluxo-de-Compra-T-446f3-completar-o-fluxo-de-compra-firefox\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js",
+                        "column": 14,
+                        "line": 9
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a1cfe142301e1d7fef14-589930afb15a41c39cfe",
+              "file": "e2e-flow.spec.js",
+              "line": 10,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "filters.spec.js",
+      "file": "filters.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Filtros",
+          "file": "filters.spec.js",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-AUTO-009: Deve filtrar produtos pela marca Apple",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 7,
+                      "status": "failed",
+                      "duration": 6676,
+                      "error": {
+                        "message": "Error: page.fill: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"username\" class=\" css-2b097c-container\">…</div>\u001b[22m\n\u001b[2m    - fill(\"demouser\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n",
+                        "stack": "Error: page.fill: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"username\" class=\" css-2b097c-container\">…</div>\u001b[22m\n\u001b[2m    - fill(\"demouser\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n    at login (E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js:9:14)\n    at E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\filters.spec.js:11:5",
+                        "location": {
+                          "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js",
+                          "column": 14,
+                          "line": 9
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\helpers\\auth.js:9\n\n\u001b[0m \u001b[90m  7 |\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m login(page\u001b[33m,\u001b[39m username \u001b[33m=\u001b[39m \u001b[32m'demouser'\u001b[39m\u001b[33m,\u001b[39m password \u001b[33m=\u001b[39m \u001b[32m'testingisfun99'\u001b[39m) {\n \u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'#signin'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m username)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m password)\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js",
+                            "column": 14,
+                            "line": 9
+                          },
+                          "message": "Error: page.fill: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"username\" class=\" css-2b097c-container\">…</div>\u001b[22m\n\u001b[2m    - fill(\"demouser\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\helpers\\auth.js:9\n\n\u001b[0m \u001b[90m  7 |\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m login(page\u001b[33m,\u001b[39m username \u001b[33m=\u001b[39m \u001b[32m'demouser'\u001b[39m\u001b[33m,\u001b[39m password \u001b[33m=\u001b[39m \u001b[32m'testingisfun99'\u001b[39m) {\n \u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'#signin'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m username)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m password)\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at login (E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js:9:14)\u001b[22m\n\u001b[2m    at E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\filters.spec.js:11:5\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T18:47:10.014Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\filters-Filtros-TC-AUTO-00-e7086-r-produtos-pela-marca-Apple-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\filters-Filtros-TC-AUTO-00-e7086-r-produtos-pela-marca-Apple-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\filters-Filtros-TC-AUTO-00-e7086-r-produtos-pela-marca-Apple-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js",
+                        "column": 14,
+                        "line": 9
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "b74eee9bb480443e1c49-e54a1f0db19483878ad6",
+              "file": "filters.spec.js",
+              "line": 10,
+              "column": 3
+            },
+            {
+              "title": "TC-AUTO-010: Deve filtrar produtos de várias marcas",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 5,
+                      "status": "failed",
+                      "duration": 6968,
+                      "error": {
+                        "message": "Error: page.fill: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"username\" class=\" css-2b097c-container\">…</div>\u001b[22m\n\u001b[2m    - fill(\"demouser\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n",
+                        "stack": "Error: page.fill: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"username\" class=\" css-2b097c-container\">…</div>\u001b[22m\n\u001b[2m    - fill(\"demouser\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n    at login (E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js:9:14)\n    at E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\filters.spec.js:31:5",
+                        "location": {
+                          "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js",
+                          "column": 14,
+                          "line": 9
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\helpers\\auth.js:9\n\n\u001b[0m \u001b[90m  7 |\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m login(page\u001b[33m,\u001b[39m username \u001b[33m=\u001b[39m \u001b[32m'demouser'\u001b[39m\u001b[33m,\u001b[39m password \u001b[33m=\u001b[39m \u001b[32m'testingisfun99'\u001b[39m) {\n \u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'#signin'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m username)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m password)\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js",
+                            "column": 14,
+                            "line": 9
+                          },
+                          "message": "Error: page.fill: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"username\" class=\" css-2b097c-container\">…</div>\u001b[22m\n\u001b[2m    - fill(\"demouser\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\helpers\\auth.js:9\n\n\u001b[0m \u001b[90m  7 |\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m login(page\u001b[33m,\u001b[39m username \u001b[33m=\u001b[39m \u001b[32m'demouser'\u001b[39m\u001b[33m,\u001b[39m password \u001b[33m=\u001b[39m \u001b[32m'testingisfun99'\u001b[39m) {\n \u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'#signin'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m username)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m password)\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at login (E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js:9:14)\u001b[22m\n\u001b[2m    at E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\filters.spec.js:31:5\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T18:47:10.137Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\filters-Filtros-TC-AUTO-01-ece1a-r-produtos-de-várias-marcas-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\filters-Filtros-TC-AUTO-01-ece1a-r-produtos-de-várias-marcas-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\filters-Filtros-TC-AUTO-01-ece1a-r-produtos-de-várias-marcas-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js",
+                        "column": 14,
+                        "line": 9
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "b74eee9bb480443e1c49-80e603279eda851f09d1",
+              "file": "filters.spec.js",
+              "line": 30,
+              "column": 3
+            },
+            {
+              "title": "TC-AUTO-011: Deve ordenar pelo preço",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 6,
+                      "status": "failed",
+                      "duration": 6785,
+                      "error": {
+                        "message": "Error: page.fill: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"username\" class=\" css-2b097c-container\">…</div>\u001b[22m\n\u001b[2m    - fill(\"demouser\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n",
+                        "stack": "Error: page.fill: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"username\" class=\" css-2b097c-container\">…</div>\u001b[22m\n\u001b[2m    - fill(\"demouser\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n    at login (E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js:9:14)\n    at E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\filters.spec.js:49:5",
+                        "location": {
+                          "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js",
+                          "column": 14,
+                          "line": 9
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\helpers\\auth.js:9\n\n\u001b[0m \u001b[90m  7 |\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m login(page\u001b[33m,\u001b[39m username \u001b[33m=\u001b[39m \u001b[32m'demouser'\u001b[39m\u001b[33m,\u001b[39m password \u001b[33m=\u001b[39m \u001b[32m'testingisfun99'\u001b[39m) {\n \u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'#signin'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m username)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m password)\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js",
+                            "column": 14,
+                            "line": 9
+                          },
+                          "message": "Error: page.fill: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"username\" class=\" css-2b097c-container\">…</div>\u001b[22m\n\u001b[2m    - fill(\"demouser\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\helpers\\auth.js:9\n\n\u001b[0m \u001b[90m  7 |\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m login(page\u001b[33m,\u001b[39m username \u001b[33m=\u001b[39m \u001b[32m'demouser'\u001b[39m\u001b[33m,\u001b[39m password \u001b[33m=\u001b[39m \u001b[32m'testingisfun99'\u001b[39m) {\n \u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'#signin'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m username)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m password)\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at login (E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js:9:14)\u001b[22m\n\u001b[2m    at E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\filters.spec.js:49:5\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T18:47:10.151Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\filters-Filtros-TC-AUTO-011-Deve-ordenar-pelo-preço-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\filters-Filtros-TC-AUTO-011-Deve-ordenar-pelo-preço-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\filters-Filtros-TC-AUTO-011-Deve-ordenar-pelo-preço-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js",
+                        "column": 14,
+                        "line": 9
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "b74eee9bb480443e1c49-602ad92cb71cbcc284fe",
+              "file": "filters.spec.js",
+              "line": 48,
+              "column": 3
+            },
+            {
+              "title": "TC-AUTO-009: Deve filtrar produtos pela marca Apple",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 19,
+                      "parallelIndex": 4,
+                      "status": "failed",
+                      "duration": 7304,
+                      "error": {
+                        "message": "Error: page.fill: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"username\" class=\" css-2b097c-container\">…</div>\u001b[22m\n\u001b[2m    - fill(\"demouser\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n",
+                        "stack": "Error: page.fill: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"username\" class=\" css-2b097c-container\">…</div>\u001b[22m\n\u001b[2m    - fill(\"demouser\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n    at login (E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js:9:14)\n    at E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\filters.spec.js:11:5",
+                        "location": {
+                          "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js",
+                          "column": 14,
+                          "line": 9
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\helpers\\auth.js:9\n\n\u001b[0m \u001b[90m  7 |\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m login(page\u001b[33m,\u001b[39m username \u001b[33m=\u001b[39m \u001b[32m'demouser'\u001b[39m\u001b[33m,\u001b[39m password \u001b[33m=\u001b[39m \u001b[32m'testingisfun99'\u001b[39m) {\n \u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'#signin'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m username)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m password)\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js",
+                            "column": 14,
+                            "line": 9
+                          },
+                          "message": "Error: page.fill: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"username\" class=\" css-2b097c-container\">…</div>\u001b[22m\n\u001b[2m    - fill(\"demouser\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\helpers\\auth.js:9\n\n\u001b[0m \u001b[90m  7 |\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m login(page\u001b[33m,\u001b[39m username \u001b[33m=\u001b[39m \u001b[32m'demouser'\u001b[39m\u001b[33m,\u001b[39m password \u001b[33m=\u001b[39m \u001b[32m'testingisfun99'\u001b[39m) {\n \u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'#signin'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m username)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m password)\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at login (E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js:9:14)\u001b[22m\n\u001b[2m    at E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\filters.spec.js:11:5\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T18:47:20.261Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\filters-Filtros-TC-AUTO-00-e7086-r-produtos-pela-marca-Apple-firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\filters-Filtros-TC-AUTO-00-e7086-r-produtos-pela-marca-Apple-firefox\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\filters-Filtros-TC-AUTO-00-e7086-r-produtos-pela-marca-Apple-firefox\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js",
+                        "column": 14,
+                        "line": 9
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "b74eee9bb480443e1c49-638a9ad89aa456d2ffc1",
+              "file": "filters.spec.js",
+              "line": 10,
+              "column": 3
+            },
+            {
+              "title": "TC-AUTO-010: Deve filtrar produtos de várias marcas",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 20,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 7322,
+                      "error": {
+                        "message": "Error: page.fill: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"username\" class=\" css-2b097c-container\">…</div>\u001b[22m\n\u001b[2m    - fill(\"demouser\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n",
+                        "stack": "Error: page.fill: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"username\" class=\" css-2b097c-container\">…</div>\u001b[22m\n\u001b[2m    - fill(\"demouser\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n    at login (E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js:9:14)\n    at E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\filters.spec.js:31:5",
+                        "location": {
+                          "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js",
+                          "column": 14,
+                          "line": 9
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\helpers\\auth.js:9\n\n\u001b[0m \u001b[90m  7 |\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m login(page\u001b[33m,\u001b[39m username \u001b[33m=\u001b[39m \u001b[32m'demouser'\u001b[39m\u001b[33m,\u001b[39m password \u001b[33m=\u001b[39m \u001b[32m'testingisfun99'\u001b[39m) {\n \u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'#signin'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m username)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m password)\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js",
+                            "column": 14,
+                            "line": 9
+                          },
+                          "message": "Error: page.fill: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"username\" class=\" css-2b097c-container\">…</div>\u001b[22m\n\u001b[2m    - fill(\"demouser\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\helpers\\auth.js:9\n\n\u001b[0m \u001b[90m  7 |\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m login(page\u001b[33m,\u001b[39m username \u001b[33m=\u001b[39m \u001b[32m'demouser'\u001b[39m\u001b[33m,\u001b[39m password \u001b[33m=\u001b[39m \u001b[32m'testingisfun99'\u001b[39m) {\n \u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'#signin'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m username)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m password)\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at login (E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js:9:14)\u001b[22m\n\u001b[2m    at E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\filters.spec.js:31:5\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T18:47:22.129Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\filters-Filtros-TC-AUTO-01-ece1a-r-produtos-de-várias-marcas-firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\filters-Filtros-TC-AUTO-01-ece1a-r-produtos-de-várias-marcas-firefox\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\filters-Filtros-TC-AUTO-01-ece1a-r-produtos-de-várias-marcas-firefox\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js",
+                        "column": 14,
+                        "line": 9
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "b74eee9bb480443e1c49-c24ab580c317f86b0d20",
+              "file": "filters.spec.js",
+              "line": 30,
+              "column": 3
+            },
+            {
+              "title": "TC-AUTO-011: Deve ordenar pelo preço",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 21,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 6270,
+                      "error": {
+                        "message": "Error: page.fill: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"username\" class=\" css-2b097c-container\">…</div>\u001b[22m\n\u001b[2m    - fill(\"demouser\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n",
+                        "stack": "Error: page.fill: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"username\" class=\" css-2b097c-container\">…</div>\u001b[22m\n\u001b[2m    - fill(\"demouser\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n    at login (E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js:9:14)\n    at E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\filters.spec.js:49:5",
+                        "location": {
+                          "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js",
+                          "column": 14,
+                          "line": 9
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\helpers\\auth.js:9\n\n\u001b[0m \u001b[90m  7 |\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m login(page\u001b[33m,\u001b[39m username \u001b[33m=\u001b[39m \u001b[32m'demouser'\u001b[39m\u001b[33m,\u001b[39m password \u001b[33m=\u001b[39m \u001b[32m'testingisfun99'\u001b[39m) {\n \u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'#signin'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m username)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m password)\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js",
+                            "column": 14,
+                            "line": 9
+                          },
+                          "message": "Error: page.fill: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"username\" class=\" css-2b097c-container\">…</div>\u001b[22m\n\u001b[2m    - fill(\"demouser\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\helpers\\auth.js:9\n\n\u001b[0m \u001b[90m  7 |\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m login(page\u001b[33m,\u001b[39m username \u001b[33m=\u001b[39m \u001b[32m'demouser'\u001b[39m\u001b[33m,\u001b[39m password \u001b[33m=\u001b[39m \u001b[32m'testingisfun99'\u001b[39m) {\n \u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'#signin'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m username)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#username'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m password)\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mpress(\u001b[32m'#password'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Enter'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at login (E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js:9:14)\u001b[22m\n\u001b[2m    at E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\tests\\filters.spec.js:49:5\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T18:47:22.588Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\filters-Filtros-TC-AUTO-011-Deve-ordenar-pelo-preço-firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\filters-Filtros-TC-AUTO-011-Deve-ordenar-pelo-preço-firefox\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\test-results\\filters-Filtros-TC-AUTO-011-Deve-ordenar-pelo-preço-firefox\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "E:\\ROLL\\QA\\Projetos\\Projeto 1\\qa-project\\4-automated-tests\\playwright\\helpers\\auth.js",
+                        "column": 14,
+                        "line": 9
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "b74eee9bb480443e1c49-d9776da81d679b853157",
+              "file": "filters.spec.js",
+              "line": 48,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-12-02T18:47:02.278Z",
+    "duration": 27836.817000000003,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 22,
+    "flaky": 0
+  }
+}
