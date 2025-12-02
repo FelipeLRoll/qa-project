@@ -1,4 +1,13 @@
 {
+  "scripts": {
+    "test:cypress": "cd 4-automated-tests && npx cypress run",
+    "test:cypress:open": "cd 4-automated-tests && npx cypress open",
+    "test:playwright": "npx playwright test",
+    "test:playwright:ui": "npx playwright test --ui",
+    "test:playwright:report": "npx playwright show-report",
+    "test:all": "npm run test:cypress && npm run test:playwright"
+  },
+
   "devDependencies": {
     "@playwright/test": "^1.57.0",
     "@types/node": "^24.10.1"

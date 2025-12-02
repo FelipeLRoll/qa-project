@@ -74,7 +74,7 @@ describe ("Carrinho", () => {
     priceNumber1 = Math.floor(priceNumber1 * 100) / 100
 
 
-    // Mostrar no log para confirmar
+    //mostrar no log para confirmar
     cy.log("Preço item 1 (número): " + priceNumber1)
     console.log("Preço item 1 (número):", priceNumber1)
    })
@@ -100,7 +100,7 @@ describe ("Carrinho", () => {
     cy.log("Total calculado: " + total)
     console.log("Total calculado: " + total)
 
-    // agora compara com o valor do carrinho
+    //agora compara com o valor do carrinho
     cy.get(".sub-price__val")
       .invoke("text")
       .then((cartTotal) => {
