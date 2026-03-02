@@ -1,4 +1,6 @@
-EM CONSTRUÇÃO
+[![author](https://img.shields.io/badge/author-feliperoll-purple.svg)](https://www.linkedin.com/in/felipe-roll/)
+
+# Projeto de QA
 
 ## 📖 Sobre o Projeto
 
