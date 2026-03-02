@@ -2,50 +2,48 @@
 
 # Projeto de QA
 
-## 📖 Sobre o Projeto
+### :us: [English Version](https://github.com/FelipeLRoll/qa-project/blob/main/readme.md)
 
-Portfólio completo de QA incluindo testes manuais e automatizados do site bstackdemo.com
 
-## 🎯 Objetivos
+# Sobre o Projeto
 
+##  Objetivos
 
 * Documentar processos de teste profissionais
 * Executar testes manuais exploratórios e baseados em casos de teste
 * Implementar automação com Cypress
 * Reportar bugs e melhorias
-* Gerar relatórios de qualidade
+* Gerar relatórios de testes
 
-
-
-## 🛠️ Tecnologias
+##  Tecnologias
 
 * Cypress
+* Playwright
+* Github Actions
 * JavaScript
 * Markdown
 * Git/GitHub
-* 
+  
 
-## 🧪 Documentação de Testes
+##  Documentação de Testes
 
-
-
-# 🧪 Testes Automatizados
+#  Testes Automatizados
 
 Este projeto demonstra expertise em **duas principais ferramentas de automação de testes E2E**:
 
-## 🎯 Cypress
+##  Cypress
 - **Linguagem:** JavaScript
 - **Localização:** `cypress/e2e/`
 - **Executar:** `npm run cy:open` ou `npm run cy:run`
 
 ### Testes implementados:
 
-- ✅ **Autenticação** - Login/Logout com validações
-- ✅ **Carrinho** - Adicionar, remover e calcular totais
-- ✅ **Fluxo E2E** - Compra completa do início ao fim
-- ✅ **Filtros** - Filtrar por marca e ordenar por preço
+-  **Autenticação** - Login/Logout com validações
+-  **Carrinho** - Adicionar, remover e calcular totais
+-  **Fluxo E2E** - Compra completa do início ao fim
+-  **Filtros** - Filtrar por marca e ordenar por preço
 
-## 🎭 Playwright
+##  Playwright
 
 - **Linguagem:** JavaScript
 - **Localização:** `playwright/tests/`
@@ -54,20 +52,20 @@ Este projeto demonstra expertise em **duas principais ferramentas de automação
 
 ### Testes implementados:
 
-- ✅ **Autenticação** - Login/Logout com validações
-- ✅ **Carrinho** - Adicionar, remover e calcular totais
-- ✅ **Fluxo E2E** - Compra completa do início ao fim
-- ✅ **Filtros** - Filtrar por marca e ordenar por preço
+-  **Autenticação** - Login/Logout com validações
+-  **Carrinho** - Adicionar, remover e calcular totais
+-  **Fluxo E2E** - Compra completa do início ao fim
+-  **Filtros** - Filtrar por marca e ordenar por preço
 
-## 🚀 CI/CD com GitHub Actions
+##  CI/CD com GitHub Actions
 
 Ambos os frameworks executam automaticamente a cada push:
-- ✅ Testes em paralelo
-- ✅ Screenshots de evidências
-- ✅ Relatórios HTML
-- ✅ Vídeos de execução (Cypress)
+-  Testes em paralelo
+-  Screenshots de evidências
+-  Relatórios HTML
+-  Vídeos de execução (Cypress)
 
-## 📊 Comandos Úteis
+##  Comandos Úteis
 
 ### Cypress
 ```bash
@@ -82,26 +80,32 @@ npm run test:playwright:ui    # Interface visual
 npm run test:playwright:report # Visualiza relatório
 ```
 
-## 📁 Estrutura
+#  Estrutura
 ```
-4-automated-tests/
-├── cypress/
-│   └── e2e/
-│       ├── auth.cy.js
-│       ├── cart.cy.js
-│       ├── e2e-flow.cy.js
-│       └── filters.cy.js
-└── playwright/
-    ├── helpers/
-    │   └── auth.js
-    └── tests/
-        ├── auth.spec.js
-        ├── cart.spec.js
-        ├── e2e-flow.spec.js
-        └── filters.spec.js
+qa-project/
+├── 1-planning/           # Plano de testes e escopo
+├── 2-documentation/      # Documentação dos casos de teste
+├── 3-manual-tests/       # Evidências e resultados de testes manuais
+├── 4-automated-tests/
+│   ├── cypress/e2e/
+│   │   ├── auth.cy.js
+│   │   ├── cart.cy.js
+│   │   ├── e2e-flow.cy.js
+│   │   └── filters.cy.js
+│   └── playwright/
+│       ├── helpers/auth.js
+│       └── tests/
+│           ├── auth.spec.js
+│           ├── cart.spec.js
+│           ├── e2e-flow.spec.js
+│           └── filters.spec.js
+├── 6-reports/
+├── playwright-report/
+├── playwright.config.js
+└── package.json
 ```
 
-## 🎯 Cobertura de Testes
+#  Cobertura de Testes
 - **11 cenários** automatizados
 - **Login válido/inválido**
 - **Manipulação de carrinho**
@@ -109,6 +113,8 @@ npm run test:playwright:report # Visualiza relatório
 - **Filtros e ordenação**
 - **Fluxo completo de compra**
 
-## 👤 Autor
+# Desenvolvido por: 
 
-\[Felipe Roll] - QA Tester
+  * [Felipe Roll - Linkedin](https://www.linkedin.com/in/felipe-roll)
+  * [Felipe Roll - Github](https://github.com/FelipeLRoll)
+  * [Felipe Roll - Gmail](felipelroll@gmail.com)
