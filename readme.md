@@ -2,7 +2,7 @@
 
 # Complete QA Project - Manual and Automated Testing
 
-### :brazil: [Versão em Português](https://github.com/FelipeLRoll/qa-project/blob/main/readmePortugues.md)
+### :br: [Versão em Português](https://github.com/FelipeLRoll/qa-project/blob/main/readme.md)
 
 # Project Overview
 
