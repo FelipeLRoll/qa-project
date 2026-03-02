@@ -1,6 +1,6 @@
 [![author](https://img.shields.io/badge/author-feliperoll-purple.svg)](https://www.linkedin.com/in/felipe-roll/)
 
-# Projeto de QA
+# Projeto de QA (Em Andamento)
 
 ### :us: [English Version](https://github.com/FelipeLRoll/qa-project/blob/main/readme.md)
 
