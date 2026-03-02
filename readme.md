@@ -1,83 +1,50 @@
-
 [![author](https://img.shields.io/badge/author-feliperoll-purple.svg)](https://www.linkedin.com/in/felipe-roll/)
 
-# QA Project (In Progress)
+# Complete QA Project - Manual and Automated Testing
 
-### :brazil: [Versão em Português](https://github.com/FelipeLRoll/qa-project/blob/main/readmePortugues.md)
+### :us: [English Version](https://github.com/FelipeLRoll/qa-project/blob/main/readme.md)
 
-# About the Project
+# Project Overview
 
-## Objectives
+  - ## **Motivation:**
 
-* Document professional testing processes
-* Execute exploratory and test case-based manual testing
-* Implement automation with Cypress
-* Report bugs and improvements
-* Generate test reports
+  The QA part is essential for delivering reliable software products. This project combines manual exploratory testing with automated testing to demonstrate a comprehensive quality assurance approach.
 
-## Technologies
+ - ## **Objectives:**
 
-* Cypress
-* Playwright
-* Github Actions
-* JavaScript
-* Markdown
-* Git/GitHub
+The **main objective** of this project is to demonstrate professional QA skills through a testing portfolio that includes planning, documentation, execution, and report generation.
 
-## Test Documentation
+- **Develop testing documentation** including test plans, test cases, and test scenarios among others
+- **Execute manual exploratory tests** to identify usability issues and edge cases
+- **Implement automated tests** using Cypress and Playwright
+- **Generate reports** with metrics and test coverage analysis
+- **CI/CD integration** for automated test execution on every code change
 
-# Automated Tests
+- ## **Test Scope:**
 
-This project demonstrates expertise in **two main E2E test automation tools**:
+The project tests the **bstackdemo.com** website, a demo e-commerce application with the following main functionalities:
 
-## Cypress
-- **Language:** JavaScript
-- **Location:** `cypress/e2e/`
-- **Run:** `npm run cy:open` or `npm run cy:run`
+- User authentication (login/logout)
+- Product catalog with filters and sorting
+- Shopping cart management
+- Checkout process
 
-### Implemented Tests:
+# Key Features:
 
-- **Authentication** - Login/Logout with validations
-- **Cart** - Add, remove, and calculate totals
-- **E2E Flow** - Complete purchase from start to finish
-- **Filters** - Filter by brand and sort by price
+- **Test Type**: *Manual and Automated*
+- **Automation Frameworks**: *Cypress and Playwright*
+- **Process**: Test planning, test case design, manual execution, test automation, bug reporting
 
-## Playwright
+# Tools and Resources Used:
 
-- **Language:** JavaScript
-- **Location:** `playwright/tests/`
-- **Run:** `npx playwright test`
-- **Browsers:** Chromium, Firefox, WebKit
+- **Development Tools**: `Visual Studio Code, Git, GitHub`
+- **Automation Frameworks**: 
+  - `Cypress ^13.0.0` - JavaScript-based E2E testing
+  - `Playwright ^1.40.0` - Cross-browser testing framework
+- **Programming Language**: `JavaScript (Node.js)`
+- **CI/CD**: `GitHub Actions` - Automated test execution on every push
+- **Test Management**: Test cases organized in spreadsheets
 
-### Implemented Tests:
-
-- **Authentication** - Login/Logout with validations
-- **Cart** - Add, remove, and calculate totals
-- **E2E Flow** - Complete purchase from start to finish
-- **Filters** - Filter by brand and sort by price
-
-## CI/CD with GitHub Actions
-
-Both frameworks run automatically on every push:
-- Parallel testing
-- Evidence screenshots
-- HTML reports
-- Execution videos (Cypress)
-
-## Useful Commands
-
-### Cypress
-```bash
-npm run test:cypress          # Runs tests in terminal
-npm run test:cypress:open     # Opens visual interface
-```
-
-### Playwright
-```bash
-npm run test:playwright       # Runs all tests
-npm run test:playwright:ui    # Visual interface
-npm run test:playwright:report # View report
-```
 #  Structure
 ```
 qa-project/
@@ -103,17 +70,160 @@ qa-project/
 └── package.json
 ```
 
-# Test coverage
+#  Test Coverage
 
-- **11 Automated Scenarios** 
-- **Valid/Invalid Login**
-- **Shopping Cart Manipulation**
-- **Cost Validation**
-- **Filters and Sorting**
-- **Complete Purchase Flow**
+- **11 automated** scenarios
+- **Valid/invalid login**
+- **Cart manipulation**
+- **Calculation validation**
+- **Filters and sorting**
+- **Complete purchase flow**
 
-- # Developed By: 
 
-  * [Felipe Roll - Linkedin](https://www.linkedin.com/in/felipe-roll)
-  * [Felipe Roll - Github](https://github.com/FelipeLRoll)
-  * [Felipe Roll - Gmail](felipelroll@gmail.com)
+# Project Steps:
+
+  * ## 1. Test Planning
+
+    - Defined test scope and objectives
+    - Identified test scenarios based on user flows
+    - Created test strategy document
+
+  * ## 2. Test Documentation
+
+    - Designed comprehensive test cases covering:
+      - **Authentication**: Login/logout with valid and invalid credentials
+      - **Product Navigation**: Filters, sorting, and product selection
+      - **Shopping Cart**: Add, remove, update quantities
+      - **Checkout**: Complete purchase flow
+
+  * ## 3. Manual Test Execution
+
+    - Performed exploratory testing to discover bugs
+    - Documented test flow with screenshots and videos if needed
+
+  * ## 4. Test Automation
+
+    ### **Cypress and Playwright Implementation**
+
+    - Implemented 11 automated test scenarios
+    - Screenshot and video capture on failures
+    
+    **Test Coverage:**
+
+    - Login with valid credentials
+    - Login with invalid credentials
+    - Logout functionality
+    - Add products to cart
+    - Remove products from cart
+    - Update quantities in cart
+    - Apply product filters
+    - Sort products by price
+    - Complete checkout flow
+
+   
+  * ## 5. Continuous Integration (CI/CD)
+
+    - Configured GitHub Actions workflows for both frameworks
+    - Automated test execution on:
+      - Every push to the main branch
+
+    
+    **CI/CD Pipeline Features:**
+
+    - Automatic test execution
+    - HTML test report generation
+    - Screenshot artifacts on failures
+    - Video recordings
+    - Test failure notifications
+
+
+  * ## 6. Test Reports and Metrics in a spreadsheet
+
+    - Generated test reports including:
+
+      - **Pass/Fail Rates**:
+      - **Test Coverage**: 
+      - **Defect Density**: 
+      - **Test Execution Time**: 
+
+
+
+# How to Use:
+
+## Prerequisites:
+
+- Node.js (v18 or higher)
+- npm or yarn package manager
+- Git
+
+## Setup:
+
+1. **Clone the repository:**
+```bash
+git clone https://github.com/FelipeLRoll/qa-project.git
+cd qa-project
+```
+2. **Install dependencies:**
+```bash
+npm install
+```
+
+## Running Tests:
+### Cypress:
+```bash
+# Open Cypress Test Runner (Interactive Mode)
+npm run test:cypress:open
+
+# Run Cypress tests in headless mode
+npm run test:cypress
+
+# Run specific test file
+npx cypress run --spec "cypress/e2e/auth.cy.js"
+```
+
+### Playwright:
+
+```bash
+# Run all Playwright tests
+npm run test:playwright
+
+# Run tests in UI mode (Interactive)
+npm run test:playwright:ui
+
+# Run tests in specific browser (EX: Chrome)
+npx playwright test --project=chromium
+
+# View HTML report
+npm run test:playwright:report
+```
+
+### Run All Tests:
+
+```bash
+npm test
+```
+
+## Reports Location:
+
+- **Cypress Reports**: `cypress/reports/html/index.html`
+- **Playwright Reports**: `playwright-report/index.html`
+- **Screenshots**: `cypress/screenshots` e `test-results`
+- **Videos**: `cypress/videos`
+
+# Project Documentation:
+
+Documentation is available in the following locations:
+
+- **Test Plan**: `1-planning/test-plan.md`
+- **Test Cases**: `2-documentation/test-cases/`
+- **Manual Test Results**: `3-manual-tests/`
+- **Bug Reports**: `3-manual-tests/bug-reports/`
+- **Test Reports**: `6-reports/`
+- **Test Strategy**: `1-planning/test-strategy.md`
+
+
+# Developed by:
+
+  * [Felipe Roll - LinkedIn](https://www.linkedin.com/in/felipe-roll)
+  * [Felipe Roll - GitHub](https://github.com/FelipeLRoll)
+  * [Felipe Roll - Email](mailto:felipelroll@gmail.com)
