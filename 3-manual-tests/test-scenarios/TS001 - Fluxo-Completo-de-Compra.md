@@ -1,6 +1,6 @@
 # TS001 - Fluxo Completo de Compra
 
-## 📋 Informações do Cenário
+## Informações do Cenário
 
 | Campo | Detalhes |
 |-------|----------|
@@ -13,36 +13,36 @@
 | **Responsável** | Time Completo QA |
 | **Estimativa** | 25 minutos |
 
-## 🎯 Objetivo de Negócio
+## Objetivo de Negócio
 Garantir que um usuário consiga completar uma compra de forma fluida e sem obstáculos, maximizando a conversão e satisfação do cliente.
 
-## 📝 Casos de Teste Relacionados
+## Casos de Teste Relacionados
 - TC001 - Login com Credenciais Válidas
 - TC007 - Filtrar Produtos por Marca (Apple)
 - TC015 - Adicionar Produto ao Carrinho (Fluxo Completo)
 - TC025 - Checkout Completo com Sucesso
 
-## 🔄 Fluxo Principal
+## Fluxo Principal
 
-### 1. 🏠 Acesso e Primeira Impressão
+### 1. Acesso e Primeira Impressão
 - Acessar `https://bstackdemo.com`
 - Verificar carregamento correto da página inicial
 - Validar que todos os elementos visuais estão presentes
 - Confirmar que produtos são exibidos corretamente
 
-### 2. 🔍 Descoberta e Seleção de Produtos
+### 2. Descoberta e Seleção de Produtos
 - Navegar pela lista de produtos
 - Utilizar filtros por marca (ex: Apple)
 - Verificar que filtros funcionam corretamente
 - Selecionar produto desejado
 
-### 3. 🛒 Gerenciamento do Carrinho
+### 3. Gerenciamento do Carrinho
 - Adicionar produto selecionado ao carrinho
 - Verificar feedback visual de confirmação
 - Validar que contador do carrinho é atualizado
 - Acessar carrinho para revisão dos itens
 
-### 4. 💳 Processo de Checkout
+### 4. Processo de Checkout
 - Iniciar processo de checkout
 - Preencher formulário de entrega com dados válidos:
   - First Name: João
@@ -53,13 +53,13 @@ Garantir que um usuário consiga completar uma compra de forma fluida e sem obst
 - Revisar resumo do pedido
 - Confirmar compra
 
-### 5. ✅ Confirmação e Pós-Venda
+### 5. Confirmação e Pós-Venda
 - Validar mensagem de confirmação de pedido
 - Verificar que ID do pedido é gerado
 - Confirmar que carrinho foi esvaziado
 - Validar opções pós-compra (detalhes do pedido)
 
-## 🎪 Fluxos Alternativos
+## Fluxos Alternativos
 
 ### FA1 - Usuário Não Logado
 1. Navegar como visitante
@@ -72,37 +72,37 @@ Garantir que um usuário consiga completar uma compra de forma fluida e sem obst
 2. Verificar cálculo correto do total
 3. Proceder para checkout
 
-## 📊 Critérios de Aceitação
+## Critérios de Aceitação
 
 ### Funcionais
-- ✅ Usuário consegue completar compra em menos de 3 minutos
-- ✅ Todos os passos são intuitivos e claros
-- ✅ Confirmação de pedido é exibida com sucesso
-- ✅ Dados do pedido são registrados corretamente
+- Usuário consegue completar compra em menos de 3 minutos
+- Todos os passos são intuitivos e claros
+- Confirmação de pedido é exibida com sucesso
+- Dados do pedido são registrados corretamente
 
 ### Técnicos
-- ✅ Tempo de resposta em cada etapa < 3 segundos
-- ✅ Não há erros no console do navegador
-- ✅ Sessão é mantida durante todo o processo
-- ✅ Dados sensíveis são tratados com segurança
+- Tempo de resposta em cada etapa < 3 segundos
+- Não há erros no console do navegador
+- Sessão é mantida durante todo o processo
+- Dados sensíveis são tratados com segurança
 
 ### Negócio
-- ✅ Taxa de conversão potencial > 5%
-- ✅ Experiência gera confiança no usuário
-- ✅ Processo não causa abandono de carrinho
+- Taxa de conversão potencial > 5%
+- Experiência gera confiança no usuário
+- Processo não causa abandono de carrinho
 
-## 🐛 Riscos e Possíveis Problemas
+## Riscos e Possíveis Problemas
 - **Alto Impacto**: Erros no checkout podem causar perda de vendas
 - **Médio Impacto**: Problemas no carrinho podem frustrar usuários
 - **Baixo Impacto**: Issues visuais menores na navegação
 
-## 📈 Métricas de Sucesso
+## Métricas de Sucesso
 - **Tempo médio para completar compra**: < 3 minutos
 - **Taxa de sucesso do fluxo**: 100%
 - **Satisfação do usuário**: Alta (subjetiva)
 - **Erros técnicos**: 0
 
-## 🎬 Cenários de Dados de Teste
+## Cenários de Dados de Teste
 
 ### Conjunto 1 - Produtos Apple
 - Produto: iPhone 12
@@ -114,7 +114,7 @@ Garantir que um usuário consiga completar uma compra de forma fluida e sem obst
 - Produto 2: Galaxy S20
 - Quantidades: 1 cada
 
-## 📋 Checklist de Validação
+## Checklist de Validação
 - [ ] Página inicial carrega corretamente
 - [ ] Filtros funcionam e atualizam lista
 - [ ] Produto é adicionado ao carrinho com sucesso
@@ -126,7 +126,7 @@ Garantir que um usuário consiga completar uma compra de forma fluida e sem obst
 
 ---
 
-**Status**: ✅ Ativo  
+**Status**: Ativo  
 **Última Execução**: --/--/----  
 **Resultado**: --  
 **Próxima Execução**: Semana 1
