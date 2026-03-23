@@ -1,4 +1,4 @@
-\### TC005 - Logout do Sistema
+### TC005 - Logout do Sistema
 
 
 
@@ -6,47 +6,47 @@
 
 |-------|-------|
 
-| \*\*ID\*\* | TC005 |
+| **ID** | TC005 |
 
-| \*\*Título\*\* | Logout com sucesso |
+| **Título** | Logout com sucesso |
 
-| \*\*Módulo\*\* | Autenticação |
+| **Módulo** | Autenticação |
 
-| \*\*Prioridade\*\* | 🔴 Alta |
+| **Prioridade** | 🔴 Alta |
 
-| \*\*Tipo\*\* | Funcional - Positivo |
+| **Tipo** | Funcional - Positivo |
 
-| \*\*Responsável\*\* | João Santos |
+| **Responsável** | João Santos |
 
-| \*\*Estimativa\*\* | 2 minutos |
+| **Estimativa** | 2 minutos |
 
 
 
-\*\*Objetivo:\*\*
+**Objetivo:**
 
 Verificar se o logout funciona corretamente e encerra a sessão do usuário.
 
 
 
-\*\*Pré-condições:\*\*
+**Pré-condições:**
 
-\- Usuário logado com sucesso (executar TC001 primeiro)
-
-
-
-\*\*Passos para Execução:\*\*
-
-1\. Com usuário "demouser" logado
-
-2\. Localizar botão "Logout" no canto superior direito
-
-3\. Clicar no botão "Logout"
-
-4\. Observar comportamento da página
+- Usuário logado com sucesso (executar TC001 primeiro)
 
 
 
-\*\*Resultado Esperado:\*\*
+**Passos para Execução:**
+
+1. Com usuário "demouser" logado
+
+2. Localizar botão "Logout" no canto superior direito
+
+3. Clicar no botão "Logout"
+
+4. Observar comportamento da página
+
+
+
+**Resultado Esperado:**
 
 ✅ Usuário é deslogado imediatamente
 
@@ -62,19 +62,19 @@ Verificar se o logout funciona corretamente e encerra a sessão do usuário.
 
 
 
-\*\*Pós-condições:\*\*
+**Pós-condições:**
 
-\- Usuário deslogado
+- Usuário deslogado
 
-\- Não é possível acessar funcionalidades que requerem login
+- Não é possível acessar funcionalidades que requerem login
 
 
 
-\*\*Evidências Necessárias:\*\*
+**Evidências Necessárias:**
 
-\- Screenshot antes do logout (usuário logado)
+- Screenshot antes do logout (usuário logado)
 
-\- Screenshot após logout
+- Screenshot após logout
 
-\- Screenshot mostrando botão "Sign In" de volta
+- Screenshot mostrando botão "Sign In" de volta
 
