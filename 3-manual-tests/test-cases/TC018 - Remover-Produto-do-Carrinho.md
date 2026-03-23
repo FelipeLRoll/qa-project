@@ -1,4 +1,4 @@
-\#### \*\*TC018 - Remover Produto do Carrinho\*\*
+#### **TC018 - Remover Produto do Carrinho**
 
 
 
@@ -6,55 +6,55 @@
 
 |-------|----------|
 
-| \*\*ID\*\* | TC018 |
+| **ID** | TC018 |
 
-| \*\*Título\*\* | Remover produto do carrinho |
+| **Título** | Remover produto do carrinho |
 
-| \*\*Módulo\*\* | Carrinho de Compras |
+| **Módulo** | Carrinho de Compras |
 
-| \*\*Prioridade\*\* | 🔴 Alta |
+| **Prioridade** | 🔴 Alta |
 
-| \*\*Tipo\*\* | Funcional - Positivo |
+| **Tipo** | Funcional - Positivo |
 
-| \*\*Técnica\*\* | Caso de Uso |
+| **Técnica** | Caso de Uso |
 
-| \*\*Responsável\*\* | Ana Costa |
+| **Responsável** | Ana Costa |
 
-| \*\*Estimativa\*\* | 3 minutos |
-
-
-
-\*\*Pré-condições:\*\*
-
-\- Carrinho com pelo menos 1 produto
+| **Estimativa** | 3 minutos |
 
 
 
-\*\*Passos:\*\*
+**Pré-condições:**
 
-1\. Abrir carrinho
-
-2\. Anotar quantidade de itens
-
-3\. Localizar botão/ícone de remover (X, lixeira, "Remove")
-
-4\. Clicar para remover o produto
-
-5\. Observar atualização do carrinho
+- Carrinho com pelo menos 1 produto
 
 
 
-\*\*Resultado Esperado:\*\*
+**Passos:**
 
-\- ✅ Produto é removido da lista
+1. Abrir carrinho
 
-\- ✅ Contador do carrinho decrementa
+2. Anotar quantidade de itens
 
-\- ✅ Total é recalculado
+3. Localizar botão/ícone de remover (X, lixeira, "Remove")
 
-\- ✅ Animação de remoção (se houver)
+4. Clicar para remover o produto
 
-\- ✅ Se era o único produto, mensagem de carrinho vazio
+5. Observar atualização do carrinho
+
+
+
+**Resultado Esperado:**
+
+- ✅ Produto é removido da lista
+
+- ✅ Contador do carrinho decrementa
+
+- ✅ Total é recalculado
+
+- ✅ Animação de remoção (se houver)
+
+- ✅ Se era o único produto, mensagem de carrinho vazio
 
 
 
