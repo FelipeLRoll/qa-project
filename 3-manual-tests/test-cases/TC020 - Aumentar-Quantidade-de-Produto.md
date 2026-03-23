@@ -1,66 +1,57 @@
-\#### \*\*TC020 - Aumentar Quantidade de Produto\*\*
+#### **TC020 - Aumentar Quantidade de Produto**
 
 
 
 | Campo | Detalhes |
-
 |-------|----------|
-
-| \*\*ID\*\* | TC020 |
-
-| \*\*Título\*\* | Aumentar quantidade de produto no carrinho |
-
-| \*\*Módulo\*\* | Carrinho de Compras |
-
-| \*\*Prioridade\*\* | 🔴 Alta |
-
-| \*\*Tipo\*\* | Funcional - Positivo |
-
-| \*\*Técnica\*\* | Análise de Valor Limite |
-
-| \*\*Responsável\*\* | Ana Costa |
-
-| \*\*Estimativa\*\* | 3 minutos |
+| **ID** | TC020 |
+| **Título** | Aumentar quantidade de produto no carrinho |
+| **Módulo** | Carrinho de Compras |
+| **Prioridade** | 🔴 Alta |
+| **Tipo** | Funcional - Positivo |
+| **Técnica** | Análise de Valor Limite |
+| **Responsável** | Ana Costa |
+| **Estimativa** | 3 minutos |
 
 
 
-\*\*Pré-condições:\*\*
+**Pré-condições:**
 
-\- Carrinho com 1 produto (quantidade = 1)
-
-
-
-\*\*Dados de Teste:\*\*
-
-\- Produto: iPhone 12 (preço: $1299)
-
-\- Quantidade inicial: 1
-
-\- Nova quantidade: 3
+- Carrinho com 1 produto (quantidade = 1)
 
 
 
-\*\*Passos:\*\*
+**Dados de Teste:**
 
-1\. Abrir carrinho
+- Produto: iPhone 12 (preço: $1299)
 
-2\. Localizar campo de quantidade ou botões +/-
+- Quantidade inicial: 1
 
-3\. Aumentar quantidade para 3
-
-4\. Aguardar atualização
+- Nova quantidade: 3
 
 
 
-\*\*Resultado Esperado:\*\*
+**Passos:**
 
-\- ✅ Quantidade atualiza para 3
+1. Abrir carrinho
 
-\- ✅ Subtotal recalculado: $1299 × 3 = $3897
+2. Localizar campo de quantidade ou botões +/-
 
-\- ✅ Total geral atualizado
+3. Aumentar quantidade para 3
 
-\- ✅ Contador do carrinho reflete nova quantidade (ou permanece como número de itens distintos)
+4. Aguardar atualização
+
+
+
+**Resultado Esperado:**
+
+- ✅ Quantidade atualiza para 3
+
+- ✅ Subtotal recalculado: $1299 × 3 = $3897
+
+- ✅ Total geral atualizado
+
+- ✅ Contador do carrinho reflete nova quantidade (ou permanece como número de itens distintos)
 
 
 
