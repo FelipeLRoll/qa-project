@@ -3,21 +3,13 @@
 
 
 | Campo | Valor |
-
 |-------|-------|
-
 | **ID** | TC007 |
-
 | **Título** | Aplicar filtro de marca Apple |
-
 | **Módulo** | Catálogo de Produtos |
-
 | **Prioridade** | 🟡 Média |
-
 | **Tipo** | Funcional - Positivo |
-
 | **Responsável** | João Santos |
-
 | **Estimativa** | 3 minutos |
 
 
