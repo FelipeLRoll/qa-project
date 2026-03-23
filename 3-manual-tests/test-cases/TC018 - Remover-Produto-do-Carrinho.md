@@ -3,23 +3,14 @@
 
 
 | Campo | Detalhes |
-
 |-------|----------|
-
 | **ID** | TC018 |
-
 | **Título** | Remover produto do carrinho |
-
 | **Módulo** | Carrinho de Compras |
-
 | **Prioridade** | 🔴 Alta |
-
 | **Tipo** | Funcional - Positivo |
-
 | **Técnica** | Caso de Uso |
-
 | **Responsável** | Ana Costa |
-
 | **Estimativa** | 3 minutos |
 
 
