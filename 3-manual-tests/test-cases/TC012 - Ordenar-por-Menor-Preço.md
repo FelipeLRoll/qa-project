@@ -1,4 +1,4 @@
-\### TC012 - Ordenar por Menor Preço
+### TC012 - Ordenar por Menor Preço
 
 
 
@@ -6,47 +6,47 @@
 
 |-------|-------|
 
-| \*\*ID\*\* | TC012 |
+| **ID** | TC012 |
 
-| \*\*Título\*\* | Ordenar produtos do menor para o maior preço |
+| **Título** | Ordenar produtos do menor para o maior preço |
 
-| \*\*Módulo\*\* | Catálogo de Produtos |
+| **Módulo** | Catálogo de Produtos |
 
-| \*\*Prioridade\*\* | 🟡 Média |
+| **Prioridade** | 🟡 Média |
 
-| \*\*Tipo\*\* | Funcional - Positivo |
+| **Tipo** | Funcional - Positivo |
 
-| \*\*Responsável\*\* | João Santos |
+| **Responsável** | João Santos |
 
-| \*\*Estimativa\*\* | 4 minutos |
+| **Estimativa** | 4 minutos |
 
 
 
-\*\*Objetivo:\*\*
+**Objetivo:**
 
 Verificar se a ordenação por preço crescente funciona corretamente.
 
 
 
-\*\*Pré-condições:\*\*
+**Pré-condições:**
 
-\- Página inicial carregada
-
-
-
-\*\*Passos para Execução:\*\*
-
-1\. Localizar dropdown de ordenação (geralmente "Sort by")
-
-2\. Selecionar "Lowest to highest" ou "Price: Low to High"
-
-3\. Aguardar reordenação
-
-4\. Verificar ordem dos produtos
+- Página inicial carregada
 
 
 
-\*\*Resultado Esperado:\*\*
+**Passos para Execução:**
+
+1. Localizar dropdown de ordenação (geralmente "Sort by")
+
+2. Selecionar "Lowest to highest" ou "Price: Low to High"
+
+3. Aguardar reordenação
+
+4. Verificar ordem dos produtos
+
+
+
+**Resultado Esperado:**
 
 ✅ Produtos são reordenados
 
@@ -60,21 +60,21 @@ Verificar se a ordenação por preço crescente funciona corretamente.
 
 
 
-\*\*Validação Manual:\*\*
+**Validação Manual:**
 
-\- Anotar preço dos 5 primeiros produtos
+- Anotar preço dos 5 primeiros produtos
 
-\- Confirmar que P1 ≤ P2 ≤ P3 ≤ P4 ≤ P5
+- Confirmar que P1 ≤ P2 ≤ P3 ≤ P4 ≤ P5
 
 
 
-\*\*Evidências Necessárias:\*\*
+**Evidências Necessárias:**
 
-\- Screenshot antes da ordenação
+- Screenshot antes da ordenação
 
-\- Screenshot após ordenação (mostrando preços)
+- Screenshot após ordenação (mostrando preços)
 
-\- Anotar 5-6 preços para provar ordem crescente
+- Anotar 5-6 preços para provar ordem crescente
 
 
 
