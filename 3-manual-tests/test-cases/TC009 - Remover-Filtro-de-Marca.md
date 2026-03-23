@@ -1,4 +1,4 @@
-\### TC009 - Remover Filtro de Marca
+### TC009 - Remover Filtro de Marca
 
 
 
@@ -6,45 +6,45 @@
 
 |-------|-------|
 
-| \*\*ID\*\* | TC009 |
+| **ID** | TC009 |
 
-| \*\*Título\*\* | Desmarcar filtro aplicado |
+| **Título** | Desmarcar filtro aplicado |
 
-| \*\*Módulo\*\* | Catálogo de Produtos |
+| **Módulo** | Catálogo de Produtos |
 
-| \*\*Prioridade\*\* | 🟡 Média |
+| **Prioridade** | 🟡 Média |
 
-| \*\*Tipo\*\* | Funcional - Positivo |
+| **Tipo** | Funcional - Positivo |
 
-| \*\*Responsável\*\* | João Santos |
+| **Responsável** | João Santos |
 
-| \*\*Estimativa\*\* | 3 minutos |
+| **Estimativa** | 3 minutos |
 
 
 
-\*\*Objetivo:\*\*
+**Objetivo:**
 
 Verificar se ao desmarcar um filtro, os produtos voltam a ser exibidos.
 
 
 
-\*\*Pré-condições:\*\*
+**Pré-condições:**
 
-\- Filtro "Apple" já aplicado (TC007)
-
-
-
-\*\*Passos para Execução:\*\*
-
-1\. Com filtro "Apple" ativo
-
-2\. Clicar novamente na checkbox "Apple" para desmarcar
-
-3\. Observar atualização da lista
+- Filtro "Apple" já aplicado (TC007)
 
 
 
-\*\*Resultado Esperado:\*\*
+**Passos para Execução:**
+
+1. Com filtro "Apple" ativo
+
+2. Clicar novamente na checkbox "Apple" para desmarcar
+
+3. Observar atualização da lista
+
+
+
+**Resultado Esperado:**
 
 ✅ Checkbox fica desmarcada
 
@@ -58,19 +58,19 @@ Verificar se ao desmarcar um filtro, os produtos voltam a ser exibidos.
 
 
 
-\*\*Pós-condições:\*\*
+**Pós-condições:**
 
-\- Nenhum filtro ativo
+- Nenhum filtro ativo
 
-\- Todos os produtos visíveis
+- Todos os produtos visíveis
 
 
 
-\*\*Evidências Necessárias:\*\*
+**Evidências Necessárias:**
 
-\- Screenshot antes de remover filtro
+- Screenshot antes de remover filtro
 
-\- Screenshot após remover filtro
+- Screenshot após remover filtro
 
 
 
