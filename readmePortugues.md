@@ -19,6 +19,7 @@ O **objetivo principal** deste projeto é demonstrar habilidades profissionais d
 - **Implementar testes automatizados** usando Cypress e Playwright
 - **Gerar relatórios** com métricas e análise de cobertura de testes
 - **Integração CI/CD** execução automatizada de testes a cada mudança de código
+- **Fazer a suíte de testes cobrir o 'Happy Path' completo da aplicação, garantindo que as funcionalidades de venda nunca quebrem sem aviso.**
 
 - ## **Escopo dos Testes:**
 
