@@ -1,6 +1,6 @@
 # TS003 - Gerenciamento de Carrinho
 
-## 📋 Informações do Cenário
+## Informações do Cenário
 
 | Campo | Detalhes |
 |-------|----------|
@@ -13,10 +13,10 @@
 | **Responsável** | Ana Costa |
 | **Estimativa** | 30 minutos |
 
-## 🎯 Objetivo de Negócio
+## Objetivo de Negócio
 Garantir que os usuários possam gerenciar seus carrinhos de forma intuitiva e confiável, reduzindo a taxa de abandono por problemas técnicos e melhorando a experiência de compra.
 
-## 📝 Casos de Teste Relacionados
+## Casos de Teste Relacionados
 - TC015 - Adicionar Produto ao Carrinho (Fluxo Completo)
 - TC016 - Adicionar Múltiplos Produtos Diferentes
 - TC017 - Adicionar Mesmo Produto Múltiplas Vezes
@@ -27,43 +27,43 @@ Garantir que os usuários possam gerenciar seus carrinhos de forma intuitiva e c
 - TC023 - Validar Cálculo de Subtotal
 - TC024 - Validar Cálculo de Total com Múltiplos Produtos
 
-## 🔄 Fluxo Principal
+## Fluxo Principal
 
-### 1. 🛒 Adição de Produtos
+### 1. Adição de Produtos
 - Fazer login no sistema
 - Adicionar produto individual ao carrinho
 - Verificar feedback visual e contador
 - Adicionar múltiplos produtos diferentes
 - Validar que todos aparecem no carrinho
 
-### 2. 🔢 Gestão de Quantidades
+### 2. Gestão de Quantidades
 - Acessar carrinho com produtos
 - Aumentar quantidade de um produto
 - Diminuir quantidade de um produto
 - Testar limites mínimos e máximos
 - Verificar recálculo automático de totais
 
-### 3. 🗑️ Remoção de Itens
+### 3. Remoção de Itens
 - Identificar produto para remover
 - Executar remoção do carrinho
 - Validar que item some da lista
 - Confirmar recálculo do total
 - Testar remoção do último item
 
-### 4. 💰 Cálculos e Valores
+### 4. Cálculos e Valores
 - Adicionar produtos com preços diferentes
 - Testar combinações de quantidades
 - Validar subtotais por produto
 - Verificar total geral
 - Testar atualizações em tempo real
 
-### 5. 💾 Persistência de Dados
+### 5. Persistência de Dados
 - Navegar entre páginas
 - Fazer refresh (F5)
 - Fazer logout e login novamente
 - Verificar que carrinho mantém itens
 
-## 🎪 Fluxos Alternativos
+## Fluxos Alternativos
 
 ### FA1 - Carrinho Vazio
 1. Acessar carrinho vazio
@@ -81,39 +81,39 @@ Garantir que os usuários possam gerenciar seus carrinhos de forma intuitiva e c
 2. Verificar em navegador B (mesmo usuário)
 3. Validar sincronização
 
-## 📊 Critérios de Aceitação
+## Critérios de Aceitação
 
 ### Funcionais
-- ✅ Adição de produtos é instantânea e com feedback claro
-- ✅ Alterações de quantidade refletem imediatamente nos cálculos
-- ✅ Remoção de itens é confirmada visualmente
-- ✅ Carrinho persiste entre sessões do usuário
+- Adição de produtos é instantânea e com feedback claro
+- Alterações de quantidade refletem imediatamente nos cálculos
+- Remoção de itens é confirmada visualmente
+- Carrinho persiste entre sessões do usuário
 
 ### Técnicos
-- ✅ Cálculos matemáticos são 100% precisos
-- ✅ Atualizações ocorrem em tempo real
-- ✅ Dados são mantidos com integridade
-- ✅ Performance não degrada com muitos itens
+- Cálculos matemáticos são 100% precisos
+- Atualizações ocorrem em tempo real
+- Dados são mantidos com integridade
+- Performance não degrada com muitos itens
 
 ### Usabilidade
-- ✅ Interface é intuitiva e fácil de usar
-- ✅ Estados vazio/cheio são claramente diferenciados
-- ✅ Ações têm feedback visual imediato
-- ✅ Mensagens de erro são claras e helpful
+- Interface é intuitiva e fácil de usar
+- Estados vazio/cheio são claramente diferenciados
+- Ações têm feedback visual imediato
+- Mensagens de erro são claras e helpful
 
-## 🐛 Riscos e Possíveis Problemas
+## Riscos e Possíveis Problemas
 - **Crítico**: Cálculos incorretos de valores
 - **Alto**: Perda de itens do carrinho
 - **Médio**: Performance lenta com muitos itens
 - **Baixo**: Problemas visuais menores
 
-## 📈 Métricas de Sucesso
+## Métricas de Sucesso
 - **Precisão de cálculos**: 100%
 - **Persistência de dados**: 100%
 - **Tempo de resposta**: < 1 segundo
 - **Satisfação do usuário**: Alta
 
-## 🎬 Cenários de Dados de Teste
+## Cenários de Dados de Teste
 
 ### Conjunto 1 - Produtos Variados
 
@@ -134,7 +134,7 @@ Produto C: $75 × 1 = $75
 Total Esperado: $425
 
 
-## 📋 Checklist de Validação
+## Checklist de Validação
 
 - [ ] Adição de primeiro produto funciona
 - [ ] Múltiplos produtos são listados corretamente
@@ -149,7 +149,7 @@ Total Esperado: $425
 
 ---
 
-**Status**: ✅ Ativo  
+**Status**: Ativo  
 **Última Execução**: --/--/----  
 **Resultado**: --  
 **Próxima Execução**: Semana 1
