@@ -1,4 +1,4 @@
-\### TC006 - Persistência de Logout
+### TC006 - Persistência de Logout
 
 
 
@@ -6,51 +6,51 @@
 
 |-------|-------|
 
-| \*\*ID\*\* | TC006 |
+| **ID** | TC006 |
 
-| \*\*Título\*\* | Validar que logout persiste após navegação |
+| **Título** | Validar que logout persiste após navegação |
 
-| \*\*Módulo\*\* | Autenticação |
+| **Módulo** | Autenticação |
 
-| \*\*Prioridade\*\* | 🟡 Média |
+| **Prioridade** | 🟡 Média |
 
-| \*\*Tipo\*\* | Funcional - Positivo |
+| **Tipo** | Funcional - Positivo |
 
-| \*\*Responsável\*\* | João Santos |
+| **Responsável** | João Santos |
 
-| \*\*Estimativa\*\* | 3 minutos |
+| **Estimativa** | 3 minutos |
 
 
 
-\*\*Objetivo:\*\*
+**Objetivo:**
 
 Garantir que após logout, o usuário permanece deslogado mesmo após refresh ou navegação.
 
 
 
-\*\*Pré-condições:\*\*
+**Pré-condições:**
 
-\- Executar TC005 (logout realizado)
-
-
-
-\*\*Passos para Execução:\*\*
-
-1\. Após logout, pressionar F5 para atualizar página
-
-2\. Verificar status de login
-
-3\. Navegar para diferentes seções do site
-
-4\. Verificar se continua deslogado
-
-5\. Tentar acessar carrinho
-
-6\. Tentar fazer checkout
+- Executar TC005 (logout realizado)
 
 
 
-\*\*Resultado Esperado:\*\*
+**Passos para Execução:**
+
+1. Após logout, pressionar F5 para atualizar página
+
+2. Verificar status de login
+
+3. Navegar para diferentes seções do site
+
+4. Verificar se continua deslogado
+
+5. Tentar acessar carrinho
+
+6. Tentar fazer checkout
+
+
+
+**Resultado Esperado:**
 
 ✅ Após F5, usuário permanece deslogado
 
@@ -64,17 +64,17 @@ Garantir que após logout, o usuário permanece deslogado mesmo após refresh ou
 
 
 
-\*\*Pós-condições:\*\*
+**Pós-condições:**
 
-\- Usuário continua deslogado
+- Usuário continua deslogado
 
 
 
-\*\*Evidências Necessárias:\*\*
+**Evidências Necessárias:**
 
-\- Screenshot após refresh
+- Screenshot após refresh
 
-\- Screenshot ao tentar ação que requer login
+- Screenshot ao tentar ação que requer login
 
 
 
