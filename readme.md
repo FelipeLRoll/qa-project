@@ -19,6 +19,7 @@ The **main objective** of this project is to demonstrate professional QA skills 
 - **Implement automated tests** using Cypress and Playwright
 - **Generate reports** with metrics and test coverage analysis
 - **CI/CD integration** for automated test execution on every code change
+- **Make sure the test suite covers the entire 'Happy Path' of the application, ensuring that sales features never break without warning**
 
 - ## **Test Scope:**
 
