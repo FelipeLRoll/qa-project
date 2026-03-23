@@ -3,21 +3,13 @@
 
 
 | Campo | Valor |
-
 |-------|-------|
-
 | **ID** | TC013 |
-
 | **Título** | Ordenar produtos do maior para o menor preço |
-
 | **Módulo** | Catálogo de Produtos |
-
 | **Prioridade** | 🟡 Média |
-
 | **Tipo** | Funcional - Positivo |
-
 | **Responsável** | João Santos |
-
 | **Estimativa** | 4 minutos |
 
 
