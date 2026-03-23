@@ -3,21 +3,13 @@
 
 
 | Campo | Valor |
-
 |-------|-------|
-
 | **ID** | TC003 |
-
 | **Título** | Login com senha inválida |
-
 | **Módulo** | Autenticação |
-
 | **Prioridade** | 🔴 Alta |
-
 | **Tipo** | Funcional - Negativo |
-
 | **Responsável** | João Santos |
-
 | **Estimativa** | 2 minutos |
 
 
