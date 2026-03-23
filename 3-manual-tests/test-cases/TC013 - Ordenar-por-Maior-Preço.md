@@ -1,4 +1,4 @@
-\### TC013 - Ordenar por Maior Preço
+### TC013 - Ordenar por Maior Preço
 
 
 
@@ -6,43 +6,43 @@
 
 |-------|-------|
 
-| \*\*ID\*\* | TC013 |
+| **ID** | TC013 |
 
-| \*\*Título\*\* | Ordenar produtos do maior para o menor preço |
+| **Título** | Ordenar produtos do maior para o menor preço |
 
-| \*\*Módulo\*\* | Catálogo de Produtos |
+| **Módulo** | Catálogo de Produtos |
 
-| \*\*Prioridade\*\* | 🟡 Média |
+| **Prioridade** | 🟡 Média |
 
-| \*\*Tipo\*\* | Funcional - Positivo |
+| **Tipo** | Funcional - Positivo |
 
-| \*\*Responsável\*\* | João Santos |
+| **Responsável** | João Santos |
 
-| \*\*Estimativa\*\* | 4 minutos |
+| **Estimativa** | 4 minutos |
 
 
 
-\*\*Objetivo:\*\*
+**Objetivo:**
 
 Verificar ordenação por preço decrescente.
 
 
 
-\*\*Pré-condições:\*\*
+**Pré-condições:**
 
-\- Página inicial carregada
-
-
-
-\*\*Passos para Execução:\*\*
-
-1\. Selecionar "Highest to lowest" ou "Price: High to Low"
-
-2\. Verificar ordem
+- Página inicial carregada
 
 
 
-\*\*Resultado Esperado:\*\*
+**Passos para Execução:**
+
+1. Selecionar "Highest to lowest" ou "Price: High to Low"
+
+2. Verificar ordem
+
+
+
+**Resultado Esperado:**
 
 ✅ Primeiro produto tem o maior preço
 
@@ -52,15 +52,15 @@ Verificar ordenação por preço decrescente.
 
 
 
-\*\*Validação:\*\*
+**Validação:**
 
-\- Confirmar que P1 ≥ P2 ≥ P3 ≥ P4 ≥ P5
+- Confirmar que P1 ≥ P2 ≥ P3 ≥ P4 ≥ P5
 
 
 
-\*\*Evidências Necessárias:\*\*
+**Evidências Necessárias:**
 
-\- Screenshot após ordenação decrescente
+- Screenshot após ordenação decrescente
 
 
 
