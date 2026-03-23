@@ -3,21 +3,13 @@
 
 
 | Campo | Valor |
-
 |-------|-------|
-
 | **ID** | TC009 |
-
 | **Título** | Desmarcar filtro aplicado |
-
 | **Módulo** | Catálogo de Produtos |
-
 | **Prioridade** | 🟡 Média |
-
 | **Tipo** | Funcional - Positivo |
-
 | **Responsável** | João Santos |
-
 | **Estimativa** | 3 minutos |
 
 
