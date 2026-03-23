@@ -1,6 +1,6 @@
 # TS008 - Exploração de Usuários Especiais
 
-## 📋 Informações do Cenário
+## Informações do Cenário
 
 | Campo | Detalhes |
 |-------|----------|
@@ -13,48 +13,48 @@
 | **Responsável** | Time Completo QA |
 | **Estimativa** | 60 minutos |
 
-## 🎯 Objetivo de Negócio
+## Objetivo de Negócio
 Descobrir e validar funcionalidades específicas e comportamentos diferenciados para diferentes perfis de usuário, garantindo que cada tipo tenha a experiência adequada e personalizada.
 
-## 📝 Casos de Teste Relacionados
+## Casos de Teste Relacionados
 - TE002 - Sessão Exploratória: Usuários Especiais
 
-## 🔄 Fluxo Principal
+## Fluxo Principal
 
-### 1. 👤 Usuário Padrão (demouser)
+### 1. Usuário Padrão (demouser)
 - Fazer login com `demouser` / `testingisfun99`
 - Explorar funcionalidades básicas
 - Validar experiência padrão completa
 - Documentar comportamento baseline
 
-### 2. ⭐ Usuário com Favoritos (fav_user)
+### 2. Usuário com Favoritos (fav_user)
 - Fazer login com `fav_user` / `testingisfun99`
 - Buscar por funcionalidade de favoritos
 - Verificar se há produtos favoritados
 - Testar adição/remoção de favoritos
 - Validar persistência de favoritos
 
-### 3. 🖼️ Usuário com Problemas de Imagem (image_not_loading_user)
+### 3. Usuário com Problemas de Imagem (image_not_loading_user)
 - Fazer login com `image_not_loading_user` / `testingisfun99`
 - Verificar comportamento de carregamento de imagens
 - Testar fallbacks e placeholder images
 - Validar que funcionalidades principais funcionam sem imagens
 - Documentar experiência de degradação graciosa
 
-### 4. 📦 Usuário com Histórico (existing_orders_user)
+### 4. Usuário com Histórico (existing_orders_user)
 - Fazer login com `existing_orders_user` / `testingisfun99`
 - Buscar por histórico de pedidos
 - Verificar se há pedidos anteriores
 - Testar funcionalidades relacionadas a pedidos
 - Validar recompra ou detalhes de pedidos
 
-### 5. 🔄 Comparação entre Usuários
+### 5. Comparação entre Usuários
 - Comparar interfaces entre diferentes usuários
 - Validar funcionalidades exclusivas de cada um
 - Documentar diferenças de comportamento
 - Identificar inconsistências
 
-## 🎪 Fluxos Alternativos
+## Fluxos Alternativos
 
 ### FA1 - Transição entre Usuários
 1. Fazer ações com usuário A
@@ -72,39 +72,39 @@ Descobrir e validar funcionalidades específicas e comportamentos diferenciados 
 2. Validar comportamento com usuários muito antigos
 3. Testar limites de dados por usuário
 
-## 📊 Critérios de Aceitação
+## Critérios de Aceitação
 
 ### Funcionalidades Específicas
-- ✅ Cada usuário tem suas funcionalidades específicas
-- ✅ Dados são isolados entre usuários
-- ✅ Features exclusivas funcionam corretamente
-- ✅ Interface reflete o tipo de usuário
+- Cada usuário tem suas funcionalidades específicas
+- Dados são isolados entre usuários
+- Features exclusivas funcionam corretamente
+- Interface reflete o tipo de usuário
 
 ### Experiência do Usuário
-- ✅ Transições entre estados são suaves
-- ✅ Funcionalidades são intuitivas para cada perfil
-- ✅ Mensagens e feedbacks são apropriados
-- ✅ Performance não degrada com features específicas
+- Transições entre estados são suaves
+- Funcionalidades são intuitivas para cada perfil
+- Mensagens e feedbacks são apropriados
+- Performance não degrada com features específicas
 
 ### Dados e Segurança
-- ✅ Não há vazamento de dados entre usuários
-- ✅ Permissões são respeitadas
-- ✅ Dados sensíveis são protegidos
-- ✅ Histórico é mantido com integridade
+- Não há vazamento de dados entre usuários
+- Permissões são respeitadas
+- Dados sensíveis são protegidos
+- Histórico é mantido com integridade
 
-## 🐛 Riscos e Possíveis Problemas
+## Riscos e Possíveis Problemas
 - **Alto**: Vazamento de dados entre usuários
 - **Médio**: Funcionalidades específicas não funcionam
 - **Médio**: Performance degradada para usuários com muitos dados
 - **Baixo**: Problemas visuais em features específicas
 
-## 📈 Métricas de Sucesso
+## Métricas de Sucesso
 - **Isolamento de dados**: 100%
 - **Funcionalidades específicas operacionais**: 100%
 - **Performance consistente**: Sim
 - **Satisfação por perfil**: Alta
 
-## 🎬 Usuários para Exploração
+## Usuários para Exploração
 
 ### demouser
 - **Tipo**: Usuário padrão
@@ -126,7 +126,7 @@ Descobrir e validar funcionalidades específicas e comportamentos diferenciados 
 - **Expectativa**: Features de pedidos anteriores
 - **Focus**: Histórico, recompra, detalhes
 
-## 📋 Checklist de Validação
+## Checklist de Validação
 
 ### demouser (Baseline)
 - [ ] Login bem-sucedido
@@ -170,7 +170,7 @@ Descobrir e validar funcionalidades específicas e comportamentos diferenciados 
 
 ---
 
-**Status**: ✅ Ativo  
+**Status**: Ativo  
 **Última Execução**: --/--/----  
 **Resultado**: --  
 **Próxima Execução**: Semana 3
