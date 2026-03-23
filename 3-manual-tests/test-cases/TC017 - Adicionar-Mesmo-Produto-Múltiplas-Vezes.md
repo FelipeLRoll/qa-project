@@ -3,21 +3,13 @@
 
 
 | Campo | Valor |
-
 |-------|-------|
-
 | **ID** | TC017 |
-
 | **Título** | Adicionar o mesmo produto várias vezes |
-
 | **Módulo** | Carrinho de Compras |
-
 | **Prioridade** | 🟡 Média |
-
 | **Tipo** | Funcional - Positivo |
-
 | **Responsável** | Ana Costa |
-
 | **Estimativa** | 5 minutos |
 
 
