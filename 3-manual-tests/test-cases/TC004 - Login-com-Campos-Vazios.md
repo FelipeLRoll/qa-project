@@ -6,29 +6,29 @@
 
 |-------|-------|
 
-|  **ID ** | TC004 |
+|  **ID** | TC004 |
 
-|  **Título ** | Tentativa de login com campos vazios |
+|  **Título** | Tentativa de login com campos vazios |
 
-|  **Módulo ** | Autenticação |
+|  **Módulo** | Autenticação |
 
-|  **Prioridade ** | 🔴 Alta |
+|  **Prioridade** | 🔴 Alta |
 
-|  **Tipo ** | Funcional - Negativo |
+|  **Tipo** | Funcional - Negativo |
 
-|  **Responsável ** | João Santos |
+|  **Responsável** | João Santos |
 
-|  **Estimativa ** | 2 minutos |
+|  **Estimativa** | 2 minutos |
 
 
 
- **Objetivo: **
+ **Objetivo:**
 
 Verificar validação de campos obrigatórios no formulário de login.
 
 
 
- * *Pré-condições: * *
+*Pré-condições:**
 
  - Modal de login aberto
 
@@ -36,7 +36,7 @@ Verificar validação de campos obrigatórios no formulário de login.
 
 
 
- * *Dados de Teste: * *
+**Dados de Teste:**
 
 ```
 
@@ -50,7 +50,7 @@ Cenário 3: Apenas senha preenchida
 
 
 
- * *Passos para Execução: * *
+**Passos para Execução:**
 
 1 . Abrir modal de login
 
