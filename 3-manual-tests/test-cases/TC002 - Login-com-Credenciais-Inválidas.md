@@ -1,4 +1,4 @@
-\### TC002 - Login com Credenciais Inválidas
+### TC002 - Login com Credenciais Inválidas
 
 
 
@@ -6,43 +6,43 @@
 
 |-------|-------|
 
-| \*\*ID\*\* | TC002 |
+| **ID** | TC002 |
 
-| \*\*Título\*\* | Login com credenciais inválidas |
+| **Título** | Login com credenciais inválidas |
 
-| \*\*Módulo\*\* | Autenticação |
+| **Módulo** | Autenticação |
 
-| \*\*Prioridade\*\* | 🔴 Alta |
+| **Prioridade** | 🔴 Alta |
 
-| \*\*Tipo\*\* | Funcional - Negativo |
+| **Tipo** | Funcional - Negativo |
 
-| \*\*Responsável\*\* | João Santos |
+| **Responsável** | João Santos |
 
-| \*\*Estimativa\*\* | 2 minutos |
+| **Estimativa** | 2 minutos |
 
 
 
-\*\*Objetivo:\*\*
+**Objetivo:**
 
 Verificar se o sistema impede login com usuário inexistente ou inválido.
 
 
 
-\*\*Pré-condições:\*\*
+**Pré-condições:**
 
-\- Aplicação acessível
+- Aplicação acessível
 
-\- Usuário NÃO está logado
+- Usuário NÃO está logado
 
-\- Modal de login aberto
+- Modal de login aberto
 
 
 
-\*\*Dados de Teste:\*\*
+**Dados de Teste:**
 
 ```
 
-Usuário: usuario\_invalido (não existe no dropdown)
+Usuário: usuario_invalido (não existe no dropdown)
 
 Senha: qualquer
 
@@ -50,23 +50,23 @@ Senha: qualquer
 
 
 
-\*\*Passos para Execução:\*\*
+**Passos para Execução:**
 
-1\. Acessar https://bstackdemo.com
+1. Acessar https://bstackdemo.com
 
-2\. Clicar em "Sign In"
+2. Clicar em "Sign In"
 
-3\. Tentar selecionar ou digitar usuário inexistente no dropdown
+3. Tentar selecionar ou digitar usuário inexistente no dropdown
 
-4\. Tentar selecionar senha
+4. Tentar selecionar senha
 
-5\. Observar comportamento do botão "Log In"
+5. Observar comportamento do botão "Log In"
 
-6\. Se possível clicar, observar resposta do sistema
+6. Se possível clicar, observar resposta do sistema
 
 
 
-\*\*Resultado Esperado:\*\*
+**Resultado Esperado:**
 
 ✅ Dropdown não permite inserção manual de usuário
 
@@ -84,29 +84,29 @@ Senha: qualquer
 
 
 
-\*\*Pós-condições:\*\*
+**Pós-condições:**
 
-\- Usuário continua deslogado
+- Usuário continua deslogado
 
-\- Nenhuma sessão criada
-
-
-
-\*\*Critérios de Aprovação:\*\*
-
-\- Sistema previne login com credenciais inválidas
-
-\- Mensagem de erro clara e objetiva
+- Nenhuma sessão criada
 
 
 
-\*\*Evidências Necessárias:\*\*
+**Critérios de Aprovação:**
 
-\- Screenshot do dropdown de usuários
+- Sistema previne login com credenciais inválidas
 
-\- Screenshot de tentativa de login inválido
+- Mensagem de erro clara e objetiva
 
-\- Screenshot de mensagem de erro (se houver)
+
+
+**Evidências Necessárias:**
+
+- Screenshot do dropdown de usuários
+
+- Screenshot de tentativa de login inválido
+
+- Screenshot de mensagem de erro (se houver)
 
 
 
