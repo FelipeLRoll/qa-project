@@ -3,21 +3,13 @@
 
 
 | Campo | Valor |
-
 |-------|-------|
-
 | **ID** | TC008 |
-
 | **Título** | Aplicar filtros de múltiplas marcas simultaneamente |
-
 | **Módulo** | Catálogo de Produtos |
-
 | **Prioridade** | 🟡 Média |
-
 | **Tipo** | Funcional - Positivo |
-
 | **Responsável** | João Santos |
-
 | **Estimativa** | 4 minutos |
 
 
