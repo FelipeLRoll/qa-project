@@ -1,4 +1,4 @@
-\### TC003 - Login com Senha Inválida
+### TC003 - Login com Senha Inválida
 
 
 
@@ -6,63 +6,63 @@
 
 |-------|-------|
 
-| \*\*ID\*\* | TC003 |
+| **ID** | TC003 |
 
-| \*\*Título\*\* | Login com senha inválida |
+| **Título** | Login com senha inválida |
 
-| \*\*Módulo\*\* | Autenticação |
+| **Módulo** | Autenticação |
 
-| \*\*Prioridade\*\* | 🔴 Alta |
+| **Prioridade** | 🔴 Alta |
 
-| \*\*Tipo\*\* | Funcional - Negativo |
+| **Tipo** | Funcional - Negativo |
 
-| \*\*Responsável\*\* | João Santos |
+| **Responsável** | João Santos |
 
-| \*\*Estimativa\*\* | 2 minutos |
+| **Estimativa** | 2 minutos |
 
 
 
-\*\*Objetivo:\*\*
+**Objetivo:**
 
 Verificar se o sistema impede login com senha incorreta.
 
 
 
-\*\*Pré-condições:\*\*
+**Pré-condições:**
 
-\- Aplicação acessível
+- Aplicação acessível
 
-\- Usuário NÃO está logado
+- Usuário NÃO está logado
 
 
 
-\*\*Dados de Teste:\*\*
+**Dados de Teste:**
 
 ```
 
 Usuário: demouser
 
-Senha: senha\_invalida (não existe no dropdown)
+Senha: senha_invalida (não existe no dropdown)
 
 ```
 
 
 
-\*\*Passos para Execução:\*\*
+**Passos para Execução:**
 
-1\. Acessar https://bstackdemo.com
+1. Acessar https://bstackdemo.com
 
-2\. Clicar em "Sign In"
+2. Clicar em "Sign In"
 
-3\. Selecionar usuário válido "demouser"
+3. Selecionar usuário válido "demouser"
 
-4\. Tentar selecionar senha inexistente no dropdown
+4. Tentar selecionar senha inexistente no dropdown
 
-5\. Observar comportamento
+5. Observar comportamento
 
 
 
-\*\*Resultado Esperado:\*\*
+**Resultado Esperado:**
 
 ✅ Dropdown de senha limitado a opções válidas
 
@@ -74,15 +74,15 @@ Senha: senha\_invalida (não existe no dropdown)
 
 
 
-\*\*Pós-condições:\*\*
+**Pós-condições:**
 
-\- Usuário continua deslogado
+- Usuário continua deslogado
 
 
 
-\*\*Evidências Necessárias:\*\*
+**Evidências Necessárias:**
 
-\- Screenshot da tentativa
+- Screenshot da tentativa
 
-\- Screenshot de validação/erro
+- Screenshot de validação/erro
 
