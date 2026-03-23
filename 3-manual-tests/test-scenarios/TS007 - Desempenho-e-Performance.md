@@ -1,6 +1,6 @@
 # TS007 - Desempenho e Performance
 
-## 📋 Informações do Cenário
+## Informações do Cenário
 
 | Campo | Detalhes |
 |-------|----------|
@@ -13,41 +13,41 @@
 | **Responsável** | Pedro Oliveira |
 | **Estimativa** | 45 minutos |
 
-## 🎯 Objetivo de Negócio
+## Objetivo de Negócio
 Garantir que a plataforma ofereça tempos de carregamento rápidos e respostas ágeis às interações do usuário, melhorando a experiência geral e reduzindo a taxa de abandono.
 
-## 📝 Casos de Teste Relacionados
+## Casos de Teste Relacionados
 - TC039 - Tempo de Carregamento da Página Inicial
 - TC040 - Performance do Filtro de Produtos
 
-## 🔄 Fluxo Principal
+## Fluxo Principal
 
-### 1. ⚡ Métricas de Carregamento Inicial
+### 1. Métricas de Carregamento Inicial
 - Acessar página inicial com cache limpo
 - Medir First Contentful Paint (FCP)
 - Medir Largest Contentful Paint (LCP)
 - Medir Time to Interactive (TTI)
 - Validar Cumulative Layout Shift (CLS)
 
-### 2. 🔄 Performance de Interações
+### 2. Performance de Interações
 - Testar tempo de resposta dos filtros
 - Medir carregamento de modais
 - Validar performance do carrinho
 - Testar velocidade do checkout
 
-### 3. 📊 Análise com Ferramentas
+### 3. Análise com Ferramentas
 - Executar Lighthouse audit
 - Analisar Performance tab no DevTools
 - Verificar Network requests
 - Identificar bottlenecks
 
-### 4. 🔍 Otimizações Específicas
+### 4. Otimizações Específicas
 - Testar lazy loading de imagens
 - Validar cache de recursos
 - Verificar compressão de assets
 - Testar com throttling de CPU/network
 
-## 🎪 Fluxos Alternativos
+## Fluxos Alternativos
 
 ### FA1 - Condições Adversas
 1. Testar com throttling de rede (3G)
@@ -66,38 +66,38 @@ Garantir que a plataforma ofereça tempos de carregamento rápidos e respostas �
 2. Validar core content com CSS carregando
 3. Verificar fallbacks para slow connections
 
-## 📊 Critérios de Aceitação
+## Critérios de Aceitação
 
 ### Core Web Vitals
-- ✅ LCP (Largest Contentful Paint): < 2.5s
-- ✅ FID (First Input Delay): < 100ms
-- ✅ CLS (Cumulative Layout Shift): < 0.1
+- LCP (Largest Contentful Paint): < 2.5s
+- FID (First Input Delay): < 100ms
+- CLS (Cumulative Layout Shift): < 0.1
 
 ### Performance Geral
-- ✅ Página inicial carrega em < 3s
-- ✅ Interações respondem em < 100ms
-- ✅ Filtros atualizam em < 500ms
-- ✅ Checkout processa em < 3s
+- Página inicial carrega em < 3s
+- Interações respondem em < 100ms
+- Filtros atualizam em < 500ms
+- Checkout processa em < 3s
 
 ### Técnicos
-- ✅ Lighthouse score > 80
-- ✅ Não há memory leaks
-- ✅ Assets são otimizados (images, CSS, JS)
-- ✅ Cache é utilizado adequadamente
+- Lighthouse score > 80
+- Não há memory leaks
+- Assets são otimizados (images, CSS, JS)
+- Cache é utilizado adequadamente
 
-## 🐛 Riscos e Possíveis Problemas
+## Riscos e Possíveis Problemas
 - **Alto**: Performance lenta impactando conversão
 - **Médio**: Memory leaks em uso prolongado
 - **Médio**: Assets não otimizados aumentando load time
 - **Baixo**: Métricas abaixo do ideal mas aceitáveis
 
-## 📈 Métricas de Sucesso
+## Métricas de Sucesso
 - **Lighthouse Performance**: > 80
 - **Tempo carregamento inicial**: < 3s
 - **Tempo resposta interações**: < 100ms
 - **Satisfação performance**: Alta
 
-## 🎬 Ferramentas e Configurações
+## Ferramentas e Configurações
 
 ### Ferramentas
 - **Lighthouse** - Audits completos
@@ -117,7 +117,7 @@ Garantir que a plataforma ofereça tempos de carregamento rápidos e respostas �
 - Total Blocking Time (TBT)
 - Cumulative Layout Shift (CLS)
 
-## 📋 Checklist de Validação
+## Checklist de Validação
 
 ### Métricas Core Web Vitals
 - [ ] LCP < 2.5s
@@ -153,7 +153,7 @@ Garantir que a plataforma ofereça tempos de carregamento rápidos e respostas �
 
 ---
 
-**Status**: ✅ Ativo  
+**Status**: Ativo  
 **Última Execução**: --/--/----  
 **Resultado**: --  
 **Próxima Execução**: Semana 3
