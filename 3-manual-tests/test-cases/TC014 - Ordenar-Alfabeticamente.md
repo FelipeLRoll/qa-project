@@ -3,21 +3,13 @@
 
 
 | Campo | Valor |
-
 |-------|-------|
-
 | **ID** | TC014 |
-
 | **Título** | Ordenar produtos alfabeticamente |
-
 | **Módulo** | Catálogo de Produtos |
-
 | **Prioridade** | 🟢 Baixa |
-
 | **Tipo** | Funcional - Positivo |
-
 | **Responsável** | João Santos |
-
 | **Estimativa** | 3 minutos |
 
 
