@@ -3,21 +3,13 @@
 
 
 | Campo | Valor |
-
 |-------|-------|
-
 | **ID** | TC015 |
-
 | **Título** | Adicionar produto ao carrinho com sucesso |
-
 | **Módulo** | Carrinho de Compras |
-
 | **Prioridade** | 🔴 Alta |
-
 | **Tipo** | Funcional - Positivo |
-
 | **Responsável** | Ana Costa |
-
 | **Estimativa** | 4 minutos |
 
 
