@@ -3,21 +3,13 @@
 
 
 | Campo | Valor |
-
 |-------|-------|
-
 | **ID** | TC006 |
-
 | **Título** | Validar que logout persiste após navegação |
-
 | **Módulo** | Autenticação |
-
 | **Prioridade** | 🟡 Média |
-
 | **Tipo** | Funcional - Positivo |
-
 | **Responsável** | João Santos |
-
 | **Estimativa** | 3 minutos |
 
 
