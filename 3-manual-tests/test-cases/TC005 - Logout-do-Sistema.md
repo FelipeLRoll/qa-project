@@ -3,21 +3,13 @@
 
 
 | Campo | Valor |
-
 |-------|-------|
-
 | **ID** | TC005 |
-
 | **Título** | Logout com sucesso |
-
 | **Módulo** | Autenticação |
-
 | **Prioridade** | 🔴 Alta |
-
 | **Tipo** | Funcional - Positivo |
-
 | **Responsável** | João Santos |
-
 | **Estimativa** | 2 minutos |
 
 
