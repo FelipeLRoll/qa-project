@@ -1,6 +1,6 @@
 # TS004 - Processo de Checkout e Pagamento
 
-## 📋 Informações do Cenário
+## Informações do Cenário
 
 | Campo | Detalhes |
 |-------|----------|
@@ -13,10 +13,10 @@
 | **Responsável** | Ana Costa |
 | **Estimativa** | 35 minutos |
 
-## 🎯 Objetivo de Negócio
+## Objetivo de Negócio
 Garantir que o processo de finalização de compra seja seguro, intuitivo e eficiente, minimizando o abandono de carrinho e maximizando a conversão de vendas.
 
-## 📝 Casos de Teste Relacionados
+## Casos de Teste Relacionados
 - TC025 - Checkout Completo com Sucesso
 - TC026 - Checkout com Campos Obrigatórios Vazios
 - TC027 - Checkout com Dados Inválidos
@@ -25,9 +25,9 @@ Garantir que o processo de finalização de compra seja seguro, intuitivo e efic
 - TC030 - Validação de Limite de Caracteres
 - TC031 - Validação de Código Postal
 
-## 🔄 Fluxo Principal
+## Fluxo Principal
 
-### 1. 🛒 Preparação para Checkout
+### 1. Preparação para Checkout
 - Fazer login no sistema
 - Adicionar produtos ao carrinho:
   - iPhone 12 × 1
@@ -35,7 +35,7 @@ Garantir que o processo de finalização de compra seja seguro, intuitivo e efic
 - Acessar carrinho e revisar itens
 - Clicar em "Checkout" ou "Finalizar Compra"
 
-### 2. 📝 Preenchimento do Formulário
+### 2. Preenchimento do Formulário
 - Preencher dados válidos:
 
 First Name: João
@@ -46,19 +46,19 @@ Postal Code: 01310-100
 - Verificar validações em tempo real
 - Confirmar que resumo do pedido está correto
 
-### 3. ✅ Confirmação e Processamento
+### 3. Confirmação e Processamento
 - Clicar em "Submit" ou "Place Order"
 - Aguardar processamento do pedido
 - Validar mensagem de confirmação
 - Anotar ID do pedido gerado
 
-### 4. 🧹 Pós-Processamento
+### 4. Pós-Processamento
 - Verificar que carrinho foi esvaziado
 - Confirmar opções pós-compra
 - Validar redirecionamento apropriado
 - Testar acesso ao histórico de pedidos
 
-## 🎪 Fluxos Alternativos
+## Fluxos Alternativos
 
 ### FA1 - Dados de Entrega Alternativos
 1. Usar conjunto de dados válidos alternativos
@@ -77,39 +77,39 @@ Postal Code: 01310-100
 3. Tentar novamente
 4. Validar processamento
 
-## 📊 Critérios de Aceitação
+## Critérios de Aceitação
 
 ### Funcionais
-- ✅ Formulário aceita apenas dados válidos
-- ✅ Processamento é rápido e confiável
-- ✅ Confirmação de pedido é clara e informativa
-- ✅ Carrinho é limpo após compra bem-sucedida
+- Formulário aceita apenas dados válidos
+- Processamento é rápido e confiável
+- Confirmação de pedido é clara e informativa
+- Carrinho é limpo após compra bem-sucedida
 
 ### Técnicos
-- ✅ Validações ocorrem em tempo real
-- ✅ Dados são transmitidos com segurança
-- ✅ Processamento lida com concorrência
-- ✅ Erros são tratados gracefulmente
+ Validações ocorrem em tempo real
+- Dados são transmitidos com segurança
+- Processamento lida com concorrência
+- Erros são tratados gracefulmente
 
 ### Segurança
-- ✅ Dados sensíveis não são expostos
-- ✅ Validação server-side é robusta
-- ✅ Prevenção contra XSS e SQL injection
-- ✅ Transação é atomic
+- Dados sensíveis não são expostos
+- Validação server-side é robusta
+- Prevenção contra XSS e SQL injection
+- Transação é atomic
 
-## 🐛 Riscos e Possíveis Problemas
+## Riscos e Possíveis Problemas
 - **Crítico**: Perda de pedidos durante processamento
 - **Alto**: Validações insuficientes permitem dados inválidos
 - **Médio**: Má experiência do usuário durante erros
 - **Baixo**: Problemas visuais no formulário
 
-## 📈 Métricas de Sucesso
+## Métricas de Sucesso
 - **Taxa de sucesso do checkout**: > 95%
 - **Tempo de processamento**: < 5 segundos
 - **Abandono por problemas técnicos**: < 2%
 - **Satisfação do usuário**: Alta
 
-## 🎬 Cenários de Dados de Teste
+## Cenários de Dados de Teste
 
 ### Dados Válidos
 **Conjunto 1:**
@@ -132,7 +132,7 @@ Postal Code: 01310-100
 - CEPs incompletos: "123"
 - Caracteres especiais maliciosos
 
-## 📋 Checklist de Validação
+## Checklist de Validação
 - [ ] Acesso ao checkout com itens no carrinho
 - [ ] Formulário carrega corretamente
 - [ ] Campos obrigatórios são validados
@@ -147,7 +147,7 @@ Postal Code: 01310-100
 
 ---
 
-**Status**: ✅ Ativo  
+**Status**: Ativo  
 **Última Execução**: --/--/----  
 **Resultado**: --  
 **Próxima Execução**: Semana 2
