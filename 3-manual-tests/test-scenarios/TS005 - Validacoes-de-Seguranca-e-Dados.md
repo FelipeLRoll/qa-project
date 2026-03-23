@@ -1,6 +1,6 @@
 # TS005 - Validações de Segurança e Dados
 
-## 📋 Informações do Cenário
+## Informações do Cenário
 
 | Campo | Detalhes |
 |-------|----------|
@@ -13,10 +13,10 @@
 | **Responsável** | Time Completo QA |
 | **Estimativa** | 40 minutos |
 
-## 🎯 Objetivo de Negócio
+## Objetivo de Negócio
 Proteger a plataforma e usuários contra entradas maliciosas, garantir a integridade dos dados e manter a confiança do cliente através de validações robustas.
 
-## 📝 Casos de Teste Relacionados
+## Casos de Teste Relacionados
 - TC002 - Login com Usuário Inválido
 - TC003 - Login com Senha Inválida  
 - TC004 - Login com Campos Vazios
@@ -26,16 +26,16 @@ Proteger a plataforma e usuários contra entradas maliciosas, garantir a integri
 - TC030 - Validação de Limite de Caracteres
 - TC031 - Validação de Código Postal
 
-## 🔄 Fluxo Principal
+## Fluxo Principal
 
-### 1. 🔐 Validações de Autenticação
+### 1. Validações de Autenticação
 - Tentar login com usuário inexistente
 - Tentar login com senha incorreta
 - Testar login com campos vazios
 - Validar mensagens de erro apropriadas
 - Verificar que credenciais não são expostas
 
-### 2. 📋 Validações de Formulário Checkout
+### 2. Validações de Formulário Checkout
 - Testar checkout com campos obrigatórios vazios
 - Validar cada campo individualmente vazio
 - Testar dados em formatos inválidos:
@@ -43,19 +43,19 @@ Proteger a plataforma e usuários contra entradas maliciosas, garantir a integri
   - CEPs incompletos
   - Campos com caracteres especiais maliciosos
 
-### 3. 🛡️ Proteção Contra Ataques
+### 3. Proteção Contra Ataques
 - Testar entradas com scripts maliciosos
 - Verificar prevenção contra XSS
 - Testar SQL injection básico
 - Validar sanitização de dados
 
-### 4. 📏 Validações de Limites
+### 4. Validações de Limites
 - Testar limites mínimos de caracteres
 - Testar limites máximos de caracteres
 - Validar truncamento ou rejeição
 - Verificar mensagens de erro claras
 
-## 🎪 Fluxos Alternativos
+## Fluxos Alternativos
 
 ### FA1 - Validações em Tempo Real
 1. Digitar dados inválidos
@@ -74,39 +74,39 @@ Proteger a plataforma e usuários contra entradas maliciosas, garantir a integri
 2. Validar acentos e cedilhas
 3. Testar formatos de endereço internacionais
 
-## 📊 Critérios de Aceitação
+## Critérios de Aceitação
 
 ### Segurança
-- ✅ Dados maliciosos são rejeitados ou sanitizados
-- ✅ Credenciais nunca são expostas em mensagens de erro
-- ✅ Prevenção contra ataques XSS e SQL injection
-- ✅ Validações server-side são robustas
+- Dados maliciosos são rejeitados ou sanitizados
+- Credenciais nunca são expostas em mensagens de erro
+- Prevenção contra ataques XSS e SQL injection
+- Validações server-side são robustas
 
 ### Usabilidade
-- ✅ Mensagens de erro são claras e helpful
-- ✅ Validações em tempo real melhoram UX
-- ✅ Campos com erro são destacados visualmente
-- ✅ Usuário sabe exatamente como corrigir problemas
+- Mensagens de erro são claras e helpful
+- Validações em tempo real melhoram UX
+- Campos com erro são destacados visualmente
+- Usuário sabe exatamente como corrigir problemas
 
 ### Técnicos
-- ✅ Validações são consistentes entre client e server
-- ✅ Performance não é impactada por validações
-- ✅ Código de erro é apropriado para cada situação
-- ✅ Logs não contêm dados sensíveis
+- Validações são consistentes entre client e server
+- Performance não é impactada por validações
+- Código de erro é apropriado para cada situação
+- Logs não contêm dados sensíveis
 
-## 🐛 Riscos e Possíveis Problemas
+## Riscos e Possíveis Problemas
 - **Crítico**: Vulnerabilidades de segurança exploráveis
 - **Alto**: Validações muito permissivas ou restritivas
 - **Médio**: Má experiência do usuário durante erros
 - **Baixo**: Mensagens de erro técnicas ou confusas
 
-## 📈 Métricas de Sucesso
+## Métricas de Sucesso
 - **Bloqueio de dados maliciosos**: 100%
 - **Clareza das mensagens de erro**: Alta
 - **Tempo de resposta de validações**: < 1 segundo
 - **Vulnerabilidades críticas**: 0
 
-## 🎬 Cenários de Dados de Teste
+## Cenários de Dados de Teste
 
 ### Dados Maliciosos
 
@@ -130,7 +130,7 @@ Endereço: Rua José d'Ávila, 50
 CEP: 01310-100, 01310100
 
 
-## 📋 Checklist de Validação
+## Checklist de Validação
 - [ ] Login com usuário inválido é bloqueado
 - [ ] Login com senha inválida é bloqueado
 - [ ] Campos vazios são validados no login
@@ -145,7 +145,7 @@ CEP: 01310-100, 01310100
 
 ---
 
-**Status**: ✅ Ativo  
+**Status**: Ativo  
 **Última Execução**: --/--/----  
 **Resultado**: --  
 **Próxima Execução**: Semana 2
