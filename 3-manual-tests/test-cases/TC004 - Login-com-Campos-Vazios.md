@@ -3,21 +3,13 @@
 
 
 | Campo | Valor |
-
 |-------|-------|
-
 |  **ID** | TC004 |
-
 |  **Título** | Tentativa de login com campos vazios |
-
 |  **Módulo** | Autenticação |
-
 |  **Prioridade** | 🔴 Alta |
-
 |  **Tipo** | Funcional - Negativo |
-
 |  **Responsável** | João Santos |
-
 |  **Estimativa** | 2 minutos |
 
 
