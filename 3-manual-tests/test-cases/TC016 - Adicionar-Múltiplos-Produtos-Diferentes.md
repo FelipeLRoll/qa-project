@@ -3,21 +3,13 @@
 
 
 | Campo | Valor |
-
 |-------|-------|
-
 | **ID** | TC016 |
-
 | **Título** | Adicionar vários produtos diferentes ao carrinho |
-
 | **Módulo** | Carrinho de Compras |
-
 | **Prioridade** | 🔴 Alta |
-
 | **Tipo** | Funcional - Positivo |
-
 | **Responsável** | Ana Costa |
-
 | **Estimativa** | 6 minutos |
 
 
