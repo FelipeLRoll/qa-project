@@ -3,21 +3,13 @@
 
 
 | Campo | Valor |
-
 |-------|-------|
-
 | **ID** | TC011 |
-
 | **Título** | Aplicar filtro de marca + preço simultaneamente |
-
 | **Módulo** | Catálogo de Produtos |
-
 | **Prioridade** | 🟡 Média |
-
 | **Tipo** | Funcional - Positivo |
-
 | **Responsável** | João Santos |
-
 | **Estimativa** | 4 minutos |
 
 
