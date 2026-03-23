@@ -3,21 +3,13 @@
 
 
 | Campo | Valor |
-
 |-------|-------|
-
 | **ID** | TC002 |
-
 | **Título** | Login com credenciais inválidas |
-
 | **Módulo** | Autenticação |
-
 | **Prioridade** | 🔴 Alta |
-
 | **Tipo** | Funcional - Negativo |
-
 | **Responsável** | João Santos |
-
 | **Estimativa** | 2 minutos |
 
 
