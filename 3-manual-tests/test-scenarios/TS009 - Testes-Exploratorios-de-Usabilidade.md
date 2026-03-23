@@ -1,6 +1,6 @@
 # TS009 - Testes Exploratórios de Usabilidade
 
-## 📋 Informações do Cenário
+## Informações do Cenário
 
 | Campo | Detalhes |
 |-------|----------|
@@ -13,39 +13,39 @@
 | **Responsável** | Time Completo QA |
 | **Estimativa** | 90 minutos |
 
-## 🎯 Objetivo de Negócio
+## Objetivo de Negócio
 Identificar oportunidades de melhoria na experiência do usuário que não são capturadas por testes scriptados, focando em usabilidade, intuitividade e satisfação geral do cliente.
 
-## 📝 Casos de Teste Relacionados
+## Casos de Teste Relacionados
 - TE001 - Sessão Exploratória: Fluxo de Compra
 
-## 🔄 Abordagem Exploratória
+## Abordagem Exploratória
 
-### 1. 🧭 Navegação Não Linear
+### 1. Navegação Não Linear
 - Acessar páginas em ordem não convencional
 - Usar browser back/forward intensivamente
 - Testar deep links diretamente
 - Validar estado da aplicação após navegação
 
-### 2. ⚡ Interações Rápidas e Múltiplas
+### 2. Interações Rápidas e Múltiplas
 - Clicar rapidamente em botões múltiplas vezes
 - Testar double-clicks em ações importantes
 - Validar com network throttling
 - Verificar race conditions
 
-### 3. 🔄 Estados de Transição
+### 3. Estados de Transição
 - Testar durante carregamentos
 - Validar durante processamentos
 - Verificar estados de erro e recovery
 - Testar cancelamentos no meio de ações
 
-### 4. 🎯 Fluxos Incomuns
+### 4. Fluxos Incomuns
 - Tentar ações na "ordem errada"
 - Testar edge cases não considerados
 - Validar com dados incomuns mas válidos
 - Explorar limites do sistema
 
-## 🎪 Áreas de Foco Específicas
+## Áreas de Foco Específicas
 
 ### Usabilidade Geral
 - Intuitividade da navegação
@@ -71,39 +71,39 @@ Identificar oportunidades de melhoria na experiência do usuário que não são 
 - Ações sugeridas para resolver problemas
 - Consistência no tratamento de erros
 
-## 📊 Critérios de Aceitação
+## Critérios de Aceitação
 
 ### Usabilidade
-- ✅ Interface é intuitiva e fácil de aprender
-- ✅ Navegação é lógica e previsível
-- ✅ Ações têm feedback claro e imediato
-- ✅ Usuário nunca fica "perdido" ou confuso
+- Interface é intuitiva e fácil de aprender
+- Navegação é lógica e previsível
+- Ações têm feedback claro e imediato
+- Usuário nunca fica "perdido" ou confuso
 
 ### Experiência
-- ✅ Fluxos são eficientes e com mínimo de passos
-- ✅ Estados de loading são informativos
-- ✅ Erros são recoverable
-- ✅ Performance percebida é boa
+- Fluxos são eficientes e com mínimo de passos
+- Estados de loading são informativos
+- Erros são recoverable
+- Performance percebida é boa
 
 ### Acessibilidade
-- ✅ Navegação por teclado funciona
-- ✅ Contraste é adequado
-- ✅ Textos são legíveis
-- ✅ Elementos são semanticamente corretos
+- Navegação por teclado funciona
+- Contraste é adequado
+- Textos são legíveis
+- Elementos são semanticamente corretos
 
-## 🐛 Riscos e Possíveis Problemas
+## Riscos e Possíveis Problemas
 - **Alto**: Fluxos confusos causando abandono
 - **Médio**: Feedback insuficiente para ações
 - **Médio**: Estados de erro não recoverable
 - **Baixo**: Pequenas inconsistências de UX
 
-## 📈 Métricas de Sucesso
+## Métricas de Sucesso
 - **Intuitividade**: Alta (subjetiva)
 - **Eficiência de fluxos**: Boa
 - **Satisfação do usuário**: Alta
 - **Issus de usabilidade encontradas**: Múltiplas
 
-## 🎬 Técnicas de Exploração
+## Técnicas de Exploração
 
 ### Teste de 5 Segundos
 - Mostrar página por 5 segundos
@@ -125,7 +125,7 @@ Identificar oportunidades de melhoria na experiência do usuário que não são 
 - Identificar pontos de frustração
 - Propor melhorias de experiência
 
-## 📋 Checklist de Exploração
+## Checklist de Exploração
 
 ### Navegação e Estrutura
 - [ ] Site é fácil de navegar intuitivamente
@@ -181,7 +181,7 @@ Identificar oportunidades de melhoria na experiência do usuário que não são 
 
 ---
 
-**Status**: ✅ Ativo  
+**Status**: Ativo  
 **Última Execução**: --/--/----  
 **Resultado**: --  
 **Próxima Execução**: Semana 3
