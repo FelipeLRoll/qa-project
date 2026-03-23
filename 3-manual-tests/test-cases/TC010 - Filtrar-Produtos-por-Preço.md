@@ -1,4 +1,4 @@
-\### TC010 - Filtrar Produtos por Preço
+### TC010 - Filtrar Produtos por Preço
 
 
 
@@ -6,49 +6,49 @@
 
 |-------|-------|
 
-| \*\*ID\*\* | TC010 |
+| **ID** | TC010 |
 
-| \*\*Título\*\* | Aplicar filtro de faixa de preço |
+| **Título** | Aplicar filtro de faixa de preço |
 
-| \*\*Módulo\*\* | Catálogo de Produtos |
+| **Módulo** | Catálogo de Produtos |
 
-| \*\*Prioridade\*\* | 🟡 Média |
+| **Prioridade** | 🟡 Média |
 
-| \*\*Tipo\*\* | Funcional - Positivo |
+| **Tipo** | Funcional - Positivo |
 
-| \*\*Responsável\*\* | João Santos |
+| **Responsável** | João Santos |
 
-| \*\*Estimativa\*\* | 4 minutos |
+| **Estimativa** | 4 minutos |
 
 
 
-\*\*Objetivo:\*\*
+**Objetivo:**
 
 Verificar se o filtro por preço funciona corretamente.
 
 
 
-\*\*Pré-condições:\*\*
+**Pré-condições:**
 
-\- Página inicial carregada
+- Página inicial carregada
 
-\- Filtros de preço disponíveis
-
-
-
-\*\*Passos para Execução:\*\*
-
-1\. Localizar filtro de preço (slider ou checkboxes)
-
-2\. Selecionar uma faixa de preço específica
-
-3\. Verificar produtos exibidos
-
-4\. Confirmar que todos estão na faixa selecionada
+- Filtros de preço disponíveis
 
 
 
-\*\*Resultado Esperado:\*\*
+**Passos para Execução:**
+
+1. Localizar filtro de preço (slider ou checkboxes)
+
+2. Selecionar uma faixa de preço específica
+
+3. Verificar produtos exibidos
+
+4. Confirmar que todos estão na faixa selecionada
+
+
+
+**Resultado Esperado:**
 
 ✅ Apenas produtos na faixa de preço são exibidos
 
@@ -60,9 +60,9 @@ Verificar se o filtro por preço funciona corretamente.
 
 
 
-\*\*Evidências Necessárias:\*\*
+**Evidências Necessárias:**
 
-\- Screenshot do filtro aplicado
+- Screenshot do filtro aplicado
 
-\- Screenshot dos produtos com preços visíveis
+- Screenshot dos produtos com preços visíveis
 
