@@ -1,3 +1,5 @@
+![Cypress Tests](https://github.com/FelipeLRoll/qa-project/actions/workflows/tests.yml/badge.svg)
+
 [![author](https://img.shields.io/badge/author-feliperoll-purple.svg)](https://www.linkedin.com/in/felipe-roll/)
 
 # Complete QA Project - Manual and Automated Testing
